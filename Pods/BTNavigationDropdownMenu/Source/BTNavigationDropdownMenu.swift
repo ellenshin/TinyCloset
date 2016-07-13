@@ -445,11 +445,11 @@ class BTConfiguration {
 
         // Default values
         self.menuTitleColor = UIColor.darkGrayColor()
-        self.cellHeight = 50
+        self.cellHeight = 45
         self.cellBackgroundColor = UIColor.whiteColor()
         self.cellSeparatorColor = UIColor.darkGrayColor()
         self.cellTextLabelColor = UIColor.darkGrayColor()
-        self.cellTextLabelFont = UIFont(name: "HelveticaNeue-Bold", size: 17)
+        self.cellTextLabelFont = UIFont(name: "Avenir-Medium", size: 18)
         self.cellTextLabelAlignment = NSTextAlignment.Left
         self.cellSelectionColor = UIColor.lightGrayColor()
         self.checkMarkImage = UIImage(contentsOfFile: checkMarkImagePath!)

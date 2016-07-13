@@ -8,25 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		3343726E1D35A43A00C4393B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3343726D1D35A43A00C4393B /* AppDelegate.swift */; };
-		334372701D35A43A00C4393B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3343726F1D35A43A00C4393B /* FirstViewController.swift */; };
-		334372721D35A43A00C4393B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334372711D35A43A00C4393B /* SecondViewController.swift */; };
 		334372751D35A43A00C4393B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 334372731D35A43A00C4393B /* Main.storyboard */; };
 		334372771D35A43A00C4393B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 334372761D35A43A00C4393B /* Assets.xcassets */; };
 		3343727A1D35A43A00C4393B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 334372781D35A43A00C4393B /* LaunchScreen.storyboard */; };
 		334372831D35B30000C4393B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334372821D35B30000C4393B /* LoginVC.swift */; };
+		33F586B21D35DE0600E5065B /* ClosetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F586B11D35DE0600E5065B /* ClosetVC.swift */; };
 		5298A66899E4355B4F3894A3 /* Pods_TinyCloset.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A9EF002D1BD375AB39E59F /* Pods_TinyCloset.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3343726A1D35A43A00C4393B /* TinyCloset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyCloset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3343726D1D35A43A00C4393B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3343726F1D35A43A00C4393B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		334372711D35A43A00C4393B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		334372741D35A43A00C4393B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		334372761D35A43A00C4393B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		334372791D35A43A00C4393B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3343727B1D35A43A00C4393B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		334372821D35B30000C4393B /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		33F586B11D35DE0600E5065B /* ClosetVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosetVC.swift; sourceTree = "<group>"; };
 		56C5B68B41779E2E8FE40BC0 /* Pods-TinyCloset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyCloset.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinyCloset/Pods-TinyCloset.debug.xcconfig"; sourceTree = "<group>"; };
 		73B2AC8170E39E6C9E707B26 /* Pods-TinyCloset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyCloset.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinyCloset/Pods-TinyCloset.release.xcconfig"; sourceTree = "<group>"; };
 		D6A9EF002D1BD375AB39E59F /* Pods_TinyCloset.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinyCloset.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,10 +63,9 @@
 		3343726C1D35A43A00C4393B /* TinyCloset */ = {
 			isa = PBXGroup;
 			children = (
+				33F586B71D35E2C500E5065B /* View */,
 				334372811D35B2E600C4393B /* Controller */,
 				3343726D1D35A43A00C4393B /* AppDelegate.swift */,
-				3343726F1D35A43A00C4393B /* FirstViewController.swift */,
-				334372711D35A43A00C4393B /* SecondViewController.swift */,
 				334372731D35A43A00C4393B /* Main.storyboard */,
 				334372761D35A43A00C4393B /* Assets.xcassets */,
 				334372781D35A43A00C4393B /* LaunchScreen.storyboard */,
@@ -81,8 +78,16 @@
 			isa = PBXGroup;
 			children = (
 				334372821D35B30000C4393B /* LoginVC.swift */,
+				33F586B11D35DE0600E5065B /* ClosetVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		33F586B71D35E2C500E5065B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		924D051A2135FA82BC7234CA /* Pods */ = {
@@ -225,10 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				334372721D35A43A00C4393B /* SecondViewController.swift in Sources */,
 				3343726E1D35A43A00C4393B /* AppDelegate.swift in Sources */,
 				334372831D35B30000C4393B /* LoginVC.swift in Sources */,
-				334372701D35A43A00C4393B /* FirstViewController.swift in Sources */,
+				33F586B21D35DE0600E5065B /* ClosetVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
