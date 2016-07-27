@@ -7,4 +7,7 @@ use_frameworks!
 
   # Pods for TinyCloset
 pod 'BTNavigationDropdownMenu'
+pod 'DLRadioButton', '~> 1.4'
+pod "NAExpandableTableController"
+pod ‘SCLAlertView’
 end

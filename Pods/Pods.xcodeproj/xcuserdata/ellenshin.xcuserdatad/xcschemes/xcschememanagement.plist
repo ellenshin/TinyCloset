@@ -9,7 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>DLRadioButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>NAExpandableTableController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-TinyCloset.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SCLAlertView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,7 +32,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1F8D341FC8FAEC792B51BA57E8B8C896</key>
+		<key>087A8E9693BABB2EA445C1B42EC0B8E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2E016905202646F675A3E2B28B16F5D1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E59B44A993DE08E5E973E1CF63188637</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F3990E3EAC160D4E4F89177D966FC1E9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
