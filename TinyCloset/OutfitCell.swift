@@ -29,7 +29,7 @@ class OutfitCell: UITableViewCell {
     func configureCell(outfit: Outfit) {
         
         if let img = outfit.image {
-            outfitImg.image = UIImage(data: img)
+            outfitImg.image = UIImage(data: img)?.correctlyOrientedImage()
         }
         
         if let date = outfit.lastWorn {
@@ -45,6 +45,8 @@ class OutfitCell: UITableViewCell {
         
         if outfit.favorite == true {
             heartImg.image = UIImage(named: "heart-full")
+        } else {
+            heartImg.image = UIImage(named: "heart-empty")
         }
         
         self.outfit = outfit

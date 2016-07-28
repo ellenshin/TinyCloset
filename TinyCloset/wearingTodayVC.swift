@@ -174,9 +174,9 @@ class wearingTodayVC: UIViewController, NAExpandableTableViewDataSource, NAExpan
         for type in typeArray {
             outfit.addObject(type, forKey: "types")
         }
-        outfit.setOutfitImage(outfitImg.image!)
+        outfit.setOutfitImage(outfitImg.image!.correctlyOrientedImage())
         outfit.setSeasonType(selectedSeason)
-        outfit.setFavorite(favorite)
+        outfit.favorite = self.favorite
         outfit.wearToday()
         
     }

@@ -11,15 +11,13 @@ import CoreData
 import UIKit
 
 class Outfit: NSManagedObject {
-
+    
     var wornDates = NSMutableArray()
     var peopleArray = [Person]()
-    var favorite: Bool!
-    
+
     override func awakeFromInsert() {
         super.awakeFromInsert()
         self.lastWorn = "Never"
-        self.favorite = false
     }
     
     func setSeasonType(s: Seasons) {
@@ -71,10 +69,10 @@ class Outfit: NSManagedObject {
         self.types = NSSet(array: types)
     }
     
-    func setFavorite(bool: Bool) {
-        favorite = bool
-    }
-    
+//    func setFavorite(bool: Bool) {
+//        favorite = bool
+//    }
+//    
     func changeFavorite() {
         if self.favorite == true {
             favorite = false
@@ -92,5 +90,5 @@ class Outfit: NSManagedObject {
         wornDates.addObject(convertedDate)
         lastWorn = wornDates[wornDates.count - 1] as? String
     }
-
+    
 }
