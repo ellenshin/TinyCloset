@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OutfitCell: UITableViewCell {
+class OutfitCell: UICollectionViewCell {
 
     @IBOutlet weak var outfitImg: CustomImageView!
     @IBOutlet weak var dateLbl: UILabel!

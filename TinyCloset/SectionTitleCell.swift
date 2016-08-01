@@ -30,4 +30,10 @@ class SectionTitleCell: UITableViewCell {
         addBtn.hidden = false
         addBtn.tag = tag
     }
+    
+    func rotateArrow() {
+        UIView.animateWithDuration(0.5, animations: {[weak self] () -> () in
+            self!.arrowImg.transform = CGAffineTransformRotate(self!.arrowImg.transform, 180 * CGFloat(M_PI/180))
+        })
+    }
 }

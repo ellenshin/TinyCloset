@@ -39,7 +39,7 @@ class CustomView: UIView {
             
             if materialKey {
                 self.layer.masksToBounds = false
-                self.layer.shadowOpacity = 1.0
+                self.layer.shadowOpacity = 0.8
                 self.layer.shadowRadius = 3.0
                 self.layer.shadowOffset = CGSizeMake(3.0, 5.0)
                 self.layer.shadowColor = UIColor(red: 157.0/255.0, green: 157.0/255.0, blue: 157.0/255.0, alpha: 1.0).CGColor

@@ -7,114 +7,149 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01C57309E2EF9E7025552938EFD9E244 /* BTNavigationDropdownMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE8D4B351189B892C44B22F05AD9FB /* BTNavigationDropdownMenu-dummy.m */; };
-		064537A4D2690D42BA12CB6F36EA8914 /* BTNavigationDropdownMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0CE71FCD898848D1FE093CEB93FB1B08 /* BTNavigationDropdownMenu.bundle */; };
-		0E7C4334251313ADBE06D9355E0C48B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		106DCB1A215C05E2FD641039160D4686 /* Pods-TinyCloset-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE27804974A901A445622986D65E15 /* Pods-TinyCloset-dummy.m */; };
-		1FA6F55238D2BC35915AECD626884F1D /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A332B23420ACBFEDFC83ED0E4A44F3 /* DLRadioButton.m */; };
-		31375D677778F2B217957BFB3AAAB316 /* BTNavigationDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3B869C5797C1A54E67AE08A991BCC7 /* BTNavigationDropdownMenu.swift */; };
-		4770D6DE8B54F63F284EE2234B940051 /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DC302A58BC3DF55CF4435037ED2825 /* SCLAlertView-dummy.m */; };
-		5F5B910D306CC0849640D0372E2ADB43 /* DLRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A90ABB719ABDACFE97CA30F8CDB1223 /* DLRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60E7B9B7DD970817EAB72955AAB5E8A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		752E6B42E6206B1EA6B016B19AAF4652 /* BTNavigationDropdownMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF356194D0F3D95BE7A5E39AEDD5B44 /* BTNavigationDropdownMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01C57309E2EF9E7025552938EFD9E244 /* BTNavigationDropdownMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F1B2BE7D91B85C0314CE9042D8C9C6 /* BTNavigationDropdownMenu-dummy.m */; };
+		064537A4D2690D42BA12CB6F36EA8914 /* BTNavigationDropdownMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54F01BD170DD5E62298E4FC0FDB4B76C /* BTNavigationDropdownMenu.bundle */; };
+		17CD2E009DE8E3B5E67931B817DB066E /* JTAppleCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F2D1E7A19218BEDD179106A0EEFFD4 /* JTAppleCalendarView.swift */; };
+		1FA6F55238D2BC35915AECD626884F1D /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A9B3F9B07E71F8D3FE5B3A008F1886 /* DLRadioButton.m */; };
+		265D30C257C8B023FC577195561355CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		2CEC69F259625F9B7B2501DB3E754B38 /* Pods-TinyCloset-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE27804974A901A445622986D65E15 /* Pods-TinyCloset-dummy.m */; };
+		31375D677778F2B217957BFB3AAAB316 /* BTNavigationDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD733BD6F5D1FB3D110F1F218F4305B /* BTNavigationDropdownMenu.swift */; };
+		3452DD3754D95120E94DF394DC1B5883 /* GlobalFunctionsAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A146CC8F23CBE00FA17EFA9CD7BC8 /* GlobalFunctionsAndExtensions.swift */; };
+		416219B4CCFF53FBF6D68701A45ACFA5 /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A64ECB43EFE7DEE099BE15474912A63 /* SCLAlertView-dummy.m */; };
+		453CED736E7FF2449DAAC3EA044065AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		46381088FA19FD2DAB63ECC1AB6BAAB2 /* JTAppleCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A299876DB32A0F0CC1DEA3BAE6A3A35B /* JTAppleCalendar-dummy.m */; };
+		5891E177A8181815660DBEFC5B7410F4 /* JTAppleCalendarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B56B3347F2435E7A8121DED37CA5E1 /* JTAppleCalendarLayout.swift */; };
+		5B6864C610616C13B3D649F2B5F10E58 /* JTAppleDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F53D94EA9D229E1AB90FC7E46F24E /* JTAppleDayCell.swift */; };
+		5C9B0D092BE9A0F2ECFD3510EDEA9039 /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02E7250DDF2155A3343A7EA5C069DA7F /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F5B910D306CC0849640D0372E2ADB43 /* DLRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = B050E956EFE47A06A0F5A96395F4E783 /* DLRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B926B4C3D287B3A4C8D51BF8B933027 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC6F229437F14F8EF7A501447EE20B /* SCLAlertView.swift */; };
+		6CC4EFECEE1FD3FE6D6838471385F16B /* JTAppleCalendarDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4959F0622116456434EE6D70F2645107 /* JTAppleCalendarDelegates.swift */; };
+		6FA0B47BF227B7FD2067660342BE03AB /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A24355EF8DE5351F1989F86770368C6 /* SCLExtensions.swift */; };
+		6FAAFEBF84826271B3A48832D105682C /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 5F6A6467048C56EEF7153A7ACC47752F /* Info.plist */; };
+		752E6B42E6206B1EA6B016B19AAF4652 /* BTNavigationDropdownMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AE8CE9D895E7C5ADA9A6B2ACC5F4AC2 /* BTNavigationDropdownMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8744A9A91E11CF8C149143684B58446F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
+		8B3E6FA5D50DE3AB3E4ADABB049E7251 /* JTAppleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E3FF680BB65E96663525F7794A7F0B /* JTAppleViews.swift */; };
 		8F4C9143D479C9A27DC0292477B980EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		A028112A4C3A43DAA9BFB281C6AC8ACB /* DLRadioButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B0B29DE71504D8E61E46310D062917 /* DLRadioButton-dummy.m */; };
-		A30955059BC2718975F6F6D256AF4F7E /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C7A6376BA53E64C546ACEF7FE2F9D4 /* SCLExtensions.swift */; };
-		B203141CD010BFA7B790815FA892E67A /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E1E68046C265B9FF694C7C236CB406 /* SCLAlertView.swift */; };
+		A028112A4C3A43DAA9BFB281C6AC8ACB /* DLRadioButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47000BDA812702D40E864B9D9557F37B /* DLRadioButton-dummy.m */; };
+		B462F0A7C7A9A2525CECDA48C0BE7E79 /* JTAppleCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBEE8737CEA2E2411E31A5B485AA51A /* JTAppleCollectionReusableView.swift */; };
 		B81B7D7A298297298B5781977723CDE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		BE6738C0C0FD368B7299C7037B773694 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		C331FA9DBC6029F02F5FB5339E73613A /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 9E40C5D6D9B099787F5EAB0F839497CA /* Info.plist */; };
-		C7AB837F3200D41BF676DC49D222EBAC /* DLRadioButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5B7C0446AC527201A14900BB524E360 /* DLRadioButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D26118CFEC55AB19DB8BCD29BB40F55C /* NAExpandableTableController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9495E0B33FF20CBD5CFA3FB8C60D53C1 /* NAExpandableTableController-dummy.m */; };
-		D753854E6BBC7401B7504DAC72C0145F /* NAExpandableTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80438C923BF9F1788A0C0EAF86342692 /* NAExpandableTableController.swift */; };
-		F4EF77F4E010C575BEF1E2DE5F85A640 /* Pods-TinyCloset-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D6B3019C68221F08564DC0B750E3A94 /* Pods-TinyCloset-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6716471D0D3E2AFCDF38712031B547D /* NAExpandableTableController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 260AB03C93CB1BC06E30233E58749405 /* NAExpandableTableController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FF65971B0ED0568E21D82EA60F6F59C8 /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97BFD875D87945861CE05BB686A551A7 /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C69CD56514D0F663493F5EBE249C51D6 /* JTAppleCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C4D139CF6041490057D164652E10790 /* JTAppleCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7AB837F3200D41BF676DC49D222EBAC /* DLRadioButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B7D21DD5398B829DB4B14D9300F5821 /* DLRadioButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1A38551381CF69929278EC135697F70 /* UserInteractionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EF82FB4DC77F0B9526BE33A415BCC2 /* UserInteractionFunctions.swift */; };
+		D26118CFEC55AB19DB8BCD29BB40F55C /* NAExpandableTableController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6C1BA6D17F1DBABBAFD7101BB56F17 /* NAExpandableTableController-dummy.m */; };
+		D753854E6BBC7401B7504DAC72C0145F /* NAExpandableTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D9DA20C6316A9F87DA6615AB519BE2 /* NAExpandableTableController.swift */; };
+		DED6C0AB7EDF77711BD6F6A003ADDA89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		DF252487F3DE22863FC5424290F8725B /* Pods-TinyCloset-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D6B3019C68221F08564DC0B750E3A94 /* Pods-TinyCloset-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E07ADE6AAD2B4E12D7D48A78747CA3C9 /* JTCalendarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE2CA6FADE41407B0A121DF582049D /* JTCalendarProtocols.swift */; };
+		F6716471D0D3E2AFCDF38712031B547D /* NAExpandableTableController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F090272DBD056C23DA343397410A10E /* NAExpandableTableController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		06D64C1A8CC027D71AE9D774FE2ED5BA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E59B44A993DE08E5E973E1CF63188637;
-			remoteInfo = SCLAlertView;
-		};
-		07809499B6C864CE899ABA08398B512C /* PBXContainerItemProxy */ = {
+		0923E6B724B589D739792DE56E7D3A68 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2E016905202646F675A3E2B28B16F5D1;
 			remoteInfo = NAExpandableTableController;
 		};
-		36CE4019D116BC06AC83D65D93B34843 /* PBXContainerItemProxy */ = {
+		1FB71FC680F4A102B8A9FE31CBFD5572 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D632EE73AAC841B1F662586DC51B3B67;
+			remoteInfo = SCLAlertView;
+		};
+		2A5E68B3CFBB001A99257599BF225652 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F3990E3EAC160D4E4F89177D966FC1E9;
 			remoteInfo = DLRadioButton;
 		};
-		B48C1EDBE05D3F9D657067724445B189 /* PBXContainerItemProxy */ = {
+		4A4B88C893813C4C8387331AEE7534A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FD23F1DA220A44C7E84F356B64871271;
 			remoteInfo = BTNavigationDropdownMenu;
 		};
+		AA40A71E0C49CA055D8195BED379B77C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E2ED75B03CF4A2D0719664A48C0B27E;
+			remoteInfo = JTAppleCalendar;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		011C8BDBE5C955802ADCF37955A20E69 /* Pods-TinyCloset-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TinyCloset-acknowledgements.markdown"; sourceTree = "<group>"; };
-		03DC302A58BC3DF55CF4435037ED2825 /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
+		02E7250DDF2155A3343A7EA5C069DA7F /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
+		02F2D1E7A19218BEDD179106A0EEFFD4 /* JTAppleCalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarView.swift; path = Sources/Classes/JTAppleCalendarView.swift; sourceTree = "<group>"; };
+		045B5376DAC4E2AA69B2EDD81F595466 /* DLRadioButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-prefix.pch"; sourceTree = "<group>"; };
+		0A24355EF8DE5351F1989F86770368C6 /* SCLExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/SCLExtensions.swift; sourceTree = "<group>"; };
 		0A5339331848C2D54B1F68536FEBA19F /* Pods-TinyCloset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TinyCloset.release.xcconfig"; sourceTree = "<group>"; };
-		0CE71FCD898848D1FE093CEB93FB1B08 /* BTNavigationDropdownMenu.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = BTNavigationDropdownMenu.bundle; path = Source/BTNavigationDropdownMenu.bundle; sourceTree = "<group>"; };
-		1C3B869C5797C1A54E67AE08A991BCC7 /* BTNavigationDropdownMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BTNavigationDropdownMenu.swift; path = Source/BTNavigationDropdownMenu.swift; sourceTree = "<group>"; };
-		2336628037A6467C8D359FBD9D3F127A /* NAExpandableTableController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NAExpandableTableController-prefix.pch"; sourceTree = "<group>"; };
-		260AB03C93CB1BC06E30233E58749405 /* NAExpandableTableController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NAExpandableTableController-umbrella.h"; sourceTree = "<group>"; };
-		31B130431709894894F81C2BE75D9AA8 /* DLRadioButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-prefix.pch"; sourceTree = "<group>"; };
-		31FCFE3E6D15229CC314E8C6A1EA5705 /* Pods_TinyCloset.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinyCloset.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		353E2A84B8385FC5D03060ADE886824A /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
+		1EA5F0232FC3B96B1927A72EEC1112C8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F090272DBD056C23DA343397410A10E /* NAExpandableTableController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NAExpandableTableController-umbrella.h"; sourceTree = "<group>"; };
+		20D9DA20C6316A9F87DA6615AB519BE2 /* NAExpandableTableController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NAExpandableTableController.swift; path = Pod/Classes/NAExpandableTableController.swift; sourceTree = "<group>"; };
+		24F1B2BE7D91B85C0314CE9042D8C9C6 /* BTNavigationDropdownMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BTNavigationDropdownMenu-dummy.m"; sourceTree = "<group>"; };
+		29E3FF680BB65E96663525F7794A7F0B /* JTAppleViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleViews.swift; path = Sources/Classes/JTAppleViews.swift; sourceTree = "<group>"; };
 		3A1BD2E867236A0368F251672D71DA46 /* Pods-TinyCloset-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TinyCloset-frameworks.sh"; sourceTree = "<group>"; };
 		3C41A6F878F0715C2BBE1815ABF07CE2 /* Pods-TinyCloset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TinyCloset.debug.xcconfig"; sourceTree = "<group>"; };
+		3DC7763170D7198E4FC6608713E978B1 /* NAExpandableTableController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NAExpandableTableController.modulemap; sourceTree = "<group>"; };
 		3DCE27804974A901A445622986D65E15 /* Pods-TinyCloset-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TinyCloset-dummy.m"; sourceTree = "<group>"; };
-		41C7A6376BA53E64C546ACEF7FE2F9D4 /* SCLExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/SCLExtensions.swift; sourceTree = "<group>"; };
-		52B0B29DE71504D8E61E46310D062917 /* DLRadioButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DLRadioButton-dummy.m"; sourceTree = "<group>"; };
+		47000BDA812702D40E864B9D9557F37B /* DLRadioButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DLRadioButton-dummy.m"; sourceTree = "<group>"; };
+		486D7D9A776DE2456E4B4F53BE159D7F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4959F0622116456434EE6D70F2645107 /* JTAppleCalendarDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarDelegates.swift; path = Sources/Classes/JTAppleCalendarDelegates.swift; sourceTree = "<group>"; };
+		4B06598B9DBFFDC459F4025A78B296B6 /* Pods_TinyCloset.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinyCloset.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BBEE8737CEA2E2411E31A5B485AA51A /* JTAppleCollectionReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCollectionReusableView.swift; path = Sources/Classes/JTAppleCollectionReusableView.swift; sourceTree = "<group>"; };
+		4C4D139CF6041490057D164652E10790 /* JTAppleCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-umbrella.h"; sourceTree = "<group>"; };
+		4D6714C1F25DEE809E66298FCE5BDA3F /* JTAppleCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTAppleCalendar.xcconfig; sourceTree = "<group>"; };
+		54F01BD170DD5E62298E4FC0FDB4B76C /* BTNavigationDropdownMenu.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = BTNavigationDropdownMenu.bundle; path = Source/BTNavigationDropdownMenu.bundle; sourceTree = "<group>"; };
+		56168431F32CFA8271A9E672491FA0F2 /* BTNavigationDropdownMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BTNavigationDropdownMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		569A146CC8F23CBE00FA17EFA9CD7BC8 /* GlobalFunctionsAndExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalFunctionsAndExtensions.swift; path = Sources/Classes/GlobalFunctionsAndExtensions.swift; sourceTree = "<group>"; };
+		569BFAA85AEC88988B153790FF79F80A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F6A6467048C56EEF7153A7ACC47752F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = SCLAlertView/Info.plist; sourceTree = "<group>"; };
 		627AC6D47E7ACB67BA645D3DEEC1AA23 /* Pods-TinyCloset-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TinyCloset-acknowledgements.plist"; sourceTree = "<group>"; };
-		6670E06605068564CFDB18C48F60B076 /* DLRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		631F53D94EA9D229E1AB90FC7E46F24E /* JTAppleDayCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleDayCell.swift; path = Sources/Classes/JTAppleDayCell.swift; sourceTree = "<group>"; };
+		6AE8CE9D895E7C5ADA9A6B2ACC5F4AC2 /* BTNavigationDropdownMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BTNavigationDropdownMenu-umbrella.h"; sourceTree = "<group>"; };
 		6D6B3019C68221F08564DC0B750E3A94 /* Pods-TinyCloset-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TinyCloset-umbrella.h"; sourceTree = "<group>"; };
-		74FEA51F3D4CC7A51977AF9B946D5966 /* SCLAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.xcconfig; sourceTree = "<group>"; };
-		770D16A047A3746C9440C24DABC263C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80438C923BF9F1788A0C0EAF86342692 /* NAExpandableTableController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NAExpandableTableController.swift; path = Pod/Classes/NAExpandableTableController.swift; sourceTree = "<group>"; };
-		8437A46DF88F6F01F562520927541063 /* DLRadioButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DLRadioButton.modulemap; sourceTree = "<group>"; };
-		84A332B23420ACBFEDFC83ED0E4A44F3 /* DLRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLRadioButton.m; path = DLRadioButton/DLRadioButton.m; sourceTree = "<group>"; };
-		856653D787BFFE75722B395D7FD1AD48 /* DLRadioButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLRadioButton.xcconfig; sourceTree = "<group>"; };
-		8A90ABB719ABDACFE97CA30F8CDB1223 /* DLRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLRadioButton.h; path = DLRadioButton/DLRadioButton.h; sourceTree = "<group>"; };
-		8ADE8D4B351189B892C44B22F05AD9FB /* BTNavigationDropdownMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BTNavigationDropdownMenu-dummy.m"; sourceTree = "<group>"; };
+		74C85F9690A6D6B4736C2C1EAAA72528 /* JTAppleCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JTAppleCalendar.modulemap; sourceTree = "<group>"; };
+		7A64ECB43EFE7DEE099BE15474912A63 /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
+		81DBEC31731925A8A60138E0F2D06B65 /* NAExpandableTableController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NAExpandableTableController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CED7CC604E5BD297FD4704105E53417 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FD733BD6F5D1FB3D110F1F218F4305B /* BTNavigationDropdownMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BTNavigationDropdownMenu.swift; path = Source/BTNavigationDropdownMenu.swift; sourceTree = "<group>"; };
+		917EF5D8713AF10D00D255207467423E /* DLRadioButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DLRadioButton.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9495E0B33FF20CBD5CFA3FB8C60D53C1 /* NAExpandableTableController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NAExpandableTableController-dummy.m"; sourceTree = "<group>"; };
 		975523A4760A7A9B4C38AF5B6B091A6B /* Pods-TinyCloset-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TinyCloset-resources.sh"; sourceTree = "<group>"; };
-		97BFD875D87945861CE05BB686A551A7 /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
-		9E40C5D6D9B099787F5EAB0F839497CA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = SCLAlertView/Info.plist; sourceTree = "<group>"; };
+		9B7D21DD5398B829DB4B14D9300F5821 /* DLRadioButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-umbrella.h"; sourceTree = "<group>"; };
+		A14650DD77E6107340EDD175F5C9EFEA /* JTAppleCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JTAppleCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A299876DB32A0F0CC1DEA3BAE6A3A35B /* JTAppleCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTAppleCalendar-dummy.m"; sourceTree = "<group>"; };
 		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A3F1C6C2BA46A016407BAD99A4B4C000 /* NAExpandableTableController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NAExpandableTableController.modulemap; sourceTree = "<group>"; };
-		A5B7C0446AC527201A14900BB524E360 /* DLRadioButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-umbrella.h"; sourceTree = "<group>"; };
-		AB50AF2448592CCF4009B09BD8F473A2 /* NAExpandableTableController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NAExpandableTableController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2FE2CA6FADE41407B0A121DF582049D /* JTCalendarProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTCalendarProtocols.swift; path = Sources/Classes/JTCalendarProtocols.swift; sourceTree = "<group>"; };
+		A34266DA75055A8E379B26D1ACA33ADD /* DLRadioButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLRadioButton.xcconfig; sourceTree = "<group>"; };
+		A3B56B3347F2435E7A8121DED37CA5E1 /* JTAppleCalendarLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarLayout.swift; path = Sources/Classes/JTAppleCalendarLayout.swift; sourceTree = "<group>"; };
+		A4A9BAB34DA58191217B85D920344B3D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7B0A26D736CC4787F19AE1C21ADA53F /* DLRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91634DE16BD97BD752305C9B7907D08 /* SCLAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.xcconfig; sourceTree = "<group>"; };
+		AE6C1BA6D17F1DBABBAFD7101BB56F17 /* NAExpandableTableController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NAExpandableTableController-dummy.m"; sourceTree = "<group>"; };
+		B050E956EFE47A06A0F5A96395F4E783 /* DLRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLRadioButton.h; path = DLRadioButton/DLRadioButton.h; sourceTree = "<group>"; };
 		B0BF323CA1ED82DE1D83AB148F64647B /* Pods-TinyCloset.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TinyCloset.modulemap"; sourceTree = "<group>"; };
-		B0F3BBA46E1399B1550E959B1AAE99BC /* BTNavigationDropdownMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BTNavigationDropdownMenu-prefix.pch"; sourceTree = "<group>"; };
-		B2E9D81B53F7086D840FB0C1671FBA22 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B813EA36BBE8DC3EA583733C410A55ED /* NAExpandableTableController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NAExpandableTableController-prefix.pch"; sourceTree = "<group>"; };
 		B8DA2AA1503B7163A318A3D6A6AFDE7D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BAF356194D0F3D95BE7A5E39AEDD5B44 /* BTNavigationDropdownMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BTNavigationDropdownMenu-umbrella.h"; sourceTree = "<group>"; };
-		C07478E05B6DCCEC1207EE342B0DBC07 /* BTNavigationDropdownMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BTNavigationDropdownMenu.xcconfig; sourceTree = "<group>"; };
-		CC541C1118FEFB256A106117BE5035C3 /* BTNavigationDropdownMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BTNavigationDropdownMenu.modulemap; sourceTree = "<group>"; };
-		D48E25F9032AFF4C13F0BACAC052AE9F /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
-		D8F0E0A6A675773626FF09167529E8B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEC8AD2C8E965B635AE1691F15CD302C /* NAExpandableTableController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NAExpandableTableController.xcconfig; sourceTree = "<group>"; };
-		E6E1E68046C265B9FF694C7C236CB406 /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
+		BA4BE8E3B05409762C815512ED3E774E /* NAExpandableTableController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NAExpandableTableController.xcconfig; sourceTree = "<group>"; };
+		BD63816BE2E55EC5E1AB78753E8BE1D6 /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
+		C7A9AB939976EA4EBDAA0850DA8D3733 /* JTAppleCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-prefix.pch"; sourceTree = "<group>"; };
+		D5A9B3F9B07E71F8D3FE5B3A008F1886 /* DLRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLRadioButton.m; path = DLRadioButton/DLRadioButton.m; sourceTree = "<group>"; };
+		D7CED626E00E2D13FDBFAD8F5EEF4EF4 /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9EC1E6F32D50CF29726E2D6EEFCA1BF /* BTNavigationDropdownMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BTNavigationDropdownMenu.xcconfig; sourceTree = "<group>"; };
+		E3DB1359ED5095B132F3E96B8FDEC6B5 /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
+		E7E9CC936FD91BC5C030493813E39176 /* BTNavigationDropdownMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BTNavigationDropdownMenu.modulemap; sourceTree = "<group>"; };
 		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		EB0CB888C41DFBB73A53EC6FC055178C /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE26A81026EB7078F162E19B0BF0A65D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF1830569058FB95F708B330F34A9042 /* BTNavigationDropdownMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BTNavigationDropdownMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB5AEF7E25A6A42431787071E6F6C1B /* BTNavigationDropdownMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BTNavigationDropdownMenu-prefix.pch"; sourceTree = "<group>"; };
+		F4EF82FB4DC77F0B9526BE33A415BCC2 /* UserInteractionFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInteractionFunctions.swift; path = Sources/Classes/UserInteractionFunctions.swift; sourceTree = "<group>"; };
+		FFCC6F229437F14F8EF7A501447EE20B /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,11 +161,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63581295FF144CD291184DE993B2899A /* Frameworks */ = {
+		36C1DCD9D20BA178F26F5E04EB6499E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60E7B9B7DD970817EAB72955AAB5E8A2 /* Foundation.framework in Frameworks */,
+				265D30C257C8B023FC577195561355CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA87E2247C2379E194474294FFA8D4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED6C0AB7EDF77711BD6F6A003ADDA89 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,14 +186,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A14689CF0F085186CAD2E16100750CF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0E7C4334251313ADBE06D9355E0C48B5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C696D45785A75143C95EC12EAEBB833B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,47 +194,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C9EF6F970D68725D72AAE55171AFAD4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				453CED736E7FF2449DAAC3EA044065AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		011183F23C15B1106210AA2CBFF4DE94 /* SCLAlertView */ = {
+		06E2A35F3201712A9DD30F8954A5CDC5 /* DLRadioButton */ = {
 			isa = PBXGroup;
 			children = (
-				9E40C5D6D9B099787F5EAB0F839497CA /* Info.plist */,
-				E6E1E68046C265B9FF694C7C236CB406 /* SCLAlertView.swift */,
-				41C7A6376BA53E64C546ACEF7FE2F9D4 /* SCLExtensions.swift */,
-				82C2289683025BFC41D70ED84538EB4F /* Support Files */,
-			);
-			path = SCLAlertView;
-			sourceTree = "<group>";
-		};
-		08D08894DDCF7E1907013BC4A6BE5308 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				0CE71FCD898848D1FE093CEB93FB1B08 /* BTNavigationDropdownMenu.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		1497E8FA512472DB30B2521AB3B1EC70 /* DLRadioButton */ = {
-			isa = PBXGroup;
-			children = (
-				8A90ABB719ABDACFE97CA30F8CDB1223 /* DLRadioButton.h */,
-				84A332B23420ACBFEDFC83ED0E4A44F3 /* DLRadioButton.m */,
-				E32E4D542D4E534BCDA44A40617E15F6 /* Support Files */,
+				B050E956EFE47A06A0F5A96395F4E783 /* DLRadioButton.h */,
+				D5A9B3F9B07E71F8D3FE5B3A008F1886 /* DLRadioButton.m */,
+				5868C868AA4768C4FB979907A68A5ADF /* Support Files */,
 			);
 			path = DLRadioButton;
 			sourceTree = "<group>";
 		};
-		15BC8DAE6A341D4C8DDB86261E7B00B5 /* Pods */ = {
+		12424D4F490D184FEC1723AD9F67B0AD /* JTAppleCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				90CBBA5EE197FF1C6B7660B9B81A632B /* BTNavigationDropdownMenu */,
-				1497E8FA512472DB30B2521AB3B1EC70 /* DLRadioButton */,
-				E35E16A6ACD72FC888D447F3FD4CC253 /* NAExpandableTableController */,
-				011183F23C15B1106210AA2CBFF4DE94 /* SCLAlertView */,
+				569A146CC8F23CBE00FA17EFA9CD7BC8 /* GlobalFunctionsAndExtensions.swift */,
+				4959F0622116456434EE6D70F2645107 /* JTAppleCalendarDelegates.swift */,
+				A3B56B3347F2435E7A8121DED37CA5E1 /* JTAppleCalendarLayout.swift */,
+				02F2D1E7A19218BEDD179106A0EEFFD4 /* JTAppleCalendarView.swift */,
+				4BBEE8737CEA2E2411E31A5B485AA51A /* JTAppleCollectionReusableView.swift */,
+				631F53D94EA9D229E1AB90FC7E46F24E /* JTAppleDayCell.swift */,
+				29E3FF680BB65E96663525F7794A7F0B /* JTAppleViews.swift */,
+				A2FE2CA6FADE41407B0A121DF582049D /* JTCalendarProtocols.swift */,
+				F4EF82FB4DC77F0B9526BE33A415BCC2 /* UserInteractionFunctions.swift */,
+				3492B34A15F32BA775FCE2A5799CD795 /* Support Files */,
 			);
-			name = Pods;
+			path = JTAppleCalendar;
 			sourceTree = "<group>";
 		};
 		1CF7608D18B9E876030BEEC87A929891 /* Targets Support Files */ = {
@@ -210,6 +240,29 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		3492B34A15F32BA775FCE2A5799CD795 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4A9BAB34DA58191217B85D920344B3D /* Info.plist */,
+				74C85F9690A6D6B4736C2C1EAAA72528 /* JTAppleCalendar.modulemap */,
+				4D6714C1F25DEE809E66298FCE5BDA3F /* JTAppleCalendar.xcconfig */,
+				A299876DB32A0F0CC1DEA3BAE6A3A35B /* JTAppleCalendar-dummy.m */,
+				C7A9AB939976EA4EBDAA0850DA8D3733 /* JTAppleCalendar-prefix.pch */,
+				4C4D139CF6041490057D164652E10790 /* JTAppleCalendar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JTAppleCalendar";
+			sourceTree = "<group>";
+		};
+		373AD74F16330C725DBD8C5A0AF72067 /* NAExpandableTableController */ = {
+			isa = PBXGroup;
+			children = (
+				20D9DA20C6316A9F87DA6615AB519BE2 /* NAExpandableTableController.swift */,
+				9F0FFF00729E239A1BDB41AD266A2408 /* Support Files */,
+			);
+			path = NAExpandableTableController;
+			sourceTree = "<group>";
+		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,18 +271,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		57F8486EF765EB0C3A1C5FF5902497C2 /* Support Files */ = {
+		468A2F04F7C7E62F4328D901C699FCD7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC541C1118FEFB256A106117BE5035C3 /* BTNavigationDropdownMenu.modulemap */,
-				C07478E05B6DCCEC1207EE342B0DBC07 /* BTNavigationDropdownMenu.xcconfig */,
-				8ADE8D4B351189B892C44B22F05AD9FB /* BTNavigationDropdownMenu-dummy.m */,
-				B0F3BBA46E1399B1550E959B1AAE99BC /* BTNavigationDropdownMenu-prefix.pch */,
-				BAF356194D0F3D95BE7A5E39AEDD5B44 /* BTNavigationDropdownMenu-umbrella.h */,
-				D8F0E0A6A675773626FF09167529E8B2 /* Info.plist */,
+				56168431F32CFA8271A9E672491FA0F2 /* BTNavigationDropdownMenu.framework */,
+				A7B0A26D736CC4787F19AE1C21ADA53F /* DLRadioButton.framework */,
+				A14650DD77E6107340EDD175F5C9EFEA /* JTAppleCalendar.framework */,
+				81DBEC31731925A8A60138E0F2D06B65 /* NAExpandableTableController.framework */,
+				4B06598B9DBFFDC459F4025A78B296B6 /* Pods_TinyCloset.framework */,
+				D7CED626E00E2D13FDBFAD8F5EEF4EF4 /* SCLAlertView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5868C868AA4768C4FB979907A68A5ADF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				917EF5D8713AF10D00D255207467423E /* DLRadioButton.modulemap */,
+				A34266DA75055A8E379B26D1ACA33ADD /* DLRadioButton.xcconfig */,
+				47000BDA812702D40E864B9D9557F37B /* DLRadioButton-dummy.m */,
+				045B5376DAC4E2AA69B2EDD81F595466 /* DLRadioButton-prefix.pch */,
+				9B7D21DD5398B829DB4B14D9300F5821 /* DLRadioButton-umbrella.h */,
+				8CED7CC604E5BD297FD4704105E53417 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/BTNavigationDropdownMenu";
+			path = "../Target Support Files/DLRadioButton";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -237,48 +303,63 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				15BC8DAE6A341D4C8DDB86261E7B00B5 /* Pods */,
-				F91D2FD2BEA6CCA33D2A77E8041438F4 /* Products */,
+				D069FC5C9A2411B14DD323C6E0EFEAFB /* Pods */,
+				468A2F04F7C7E62F4328D901C699FCD7 /* Products */,
 				1CF7608D18B9E876030BEEC87A929891 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		82C2289683025BFC41D70ED84538EB4F /* Support Files */ = {
+		9150E87B2B129C683B620448EB9DF27E /* SCLAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				770D16A047A3746C9440C24DABC263C4 /* Info.plist */,
-				353E2A84B8385FC5D03060ADE886824A /* SCLAlertView.modulemap */,
-				74FEA51F3D4CC7A51977AF9B946D5966 /* SCLAlertView.xcconfig */,
-				03DC302A58BC3DF55CF4435037ED2825 /* SCLAlertView-dummy.m */,
-				D48E25F9032AFF4C13F0BACAC052AE9F /* SCLAlertView-prefix.pch */,
-				97BFD875D87945861CE05BB686A551A7 /* SCLAlertView-umbrella.h */,
+				5F6A6467048C56EEF7153A7ACC47752F /* Info.plist */,
+				FFCC6F229437F14F8EF7A501447EE20B /* SCLAlertView.swift */,
+				0A24355EF8DE5351F1989F86770368C6 /* SCLExtensions.swift */,
+				96E30436E7C3F125F887575BEBD8AF41 /* Support Files */,
+			);
+			path = SCLAlertView;
+			sourceTree = "<group>";
+		};
+		93C4622BAC04F09F7A68588A994179A8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7E9CC936FD91BC5C030493813E39176 /* BTNavigationDropdownMenu.modulemap */,
+				D9EC1E6F32D50CF29726E2D6EEFCA1BF /* BTNavigationDropdownMenu.xcconfig */,
+				24F1B2BE7D91B85C0314CE9042D8C9C6 /* BTNavigationDropdownMenu-dummy.m */,
+				EBB5AEF7E25A6A42431787071E6F6C1B /* BTNavigationDropdownMenu-prefix.pch */,
+				6AE8CE9D895E7C5ADA9A6B2ACC5F4AC2 /* BTNavigationDropdownMenu-umbrella.h */,
+				486D7D9A776DE2456E4B4F53BE159D7F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BTNavigationDropdownMenu";
+			sourceTree = "<group>";
+		};
+		96E30436E7C3F125F887575BEBD8AF41 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				569BFAA85AEC88988B153790FF79F80A /* Info.plist */,
+				E3DB1359ED5095B132F3E96B8FDEC6B5 /* SCLAlertView.modulemap */,
+				A91634DE16BD97BD752305C9B7907D08 /* SCLAlertView.xcconfig */,
+				7A64ECB43EFE7DEE099BE15474912A63 /* SCLAlertView-dummy.m */,
+				BD63816BE2E55EC5E1AB78753E8BE1D6 /* SCLAlertView-prefix.pch */,
+				02E7250DDF2155A3343A7EA5C069DA7F /* SCLAlertView-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SCLAlertView";
 			sourceTree = "<group>";
 		};
-		8AA213FDA46BD06BDEA889A152ADAC4D /* Support Files */ = {
+		9F0FFF00729E239A1BDB41AD266A2408 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B2E9D81B53F7086D840FB0C1671FBA22 /* Info.plist */,
-				A3F1C6C2BA46A016407BAD99A4B4C000 /* NAExpandableTableController.modulemap */,
-				DEC8AD2C8E965B635AE1691F15CD302C /* NAExpandableTableController.xcconfig */,
-				9495E0B33FF20CBD5CFA3FB8C60D53C1 /* NAExpandableTableController-dummy.m */,
-				2336628037A6467C8D359FBD9D3F127A /* NAExpandableTableController-prefix.pch */,
-				260AB03C93CB1BC06E30233E58749405 /* NAExpandableTableController-umbrella.h */,
+				1EA5F0232FC3B96B1927A72EEC1112C8 /* Info.plist */,
+				3DC7763170D7198E4FC6608713E978B1 /* NAExpandableTableController.modulemap */,
+				BA4BE8E3B05409762C815512ED3E774E /* NAExpandableTableController.xcconfig */,
+				AE6C1BA6D17F1DBABBAFD7101BB56F17 /* NAExpandableTableController-dummy.m */,
+				B813EA36BBE8DC3EA583733C410A55ED /* NAExpandableTableController-prefix.pch */,
+				1F090272DBD056C23DA343397410A10E /* NAExpandableTableController-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/NAExpandableTableController";
-			sourceTree = "<group>";
-		};
-		90CBBA5EE197FF1C6B7660B9B81A632B /* BTNavigationDropdownMenu */ = {
-			isa = PBXGroup;
-			children = (
-				1C3B869C5797C1A54E67AE08A991BCC7 /* BTNavigationDropdownMenu.swift */,
-				08D08894DDCF7E1907013BC4A6BE5308 /* Resources */,
-				57F8486EF765EB0C3A1C5FF5902497C2 /* Support Files */,
-			);
-			path = BTNavigationDropdownMenu;
 			sourceTree = "<group>";
 		};
 		B8F7F5F99854A194A0200AA2A9CB701B /* Pods-TinyCloset */ = {
@@ -299,27 +380,34 @@
 			path = "Target Support Files/Pods-TinyCloset";
 			sourceTree = "<group>";
 		};
-		E32E4D542D4E534BCDA44A40617E15F6 /* Support Files */ = {
+		D069FC5C9A2411B14DD323C6E0EFEAFB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8437A46DF88F6F01F562520927541063 /* DLRadioButton.modulemap */,
-				856653D787BFFE75722B395D7FD1AD48 /* DLRadioButton.xcconfig */,
-				52B0B29DE71504D8E61E46310D062917 /* DLRadioButton-dummy.m */,
-				31B130431709894894F81C2BE75D9AA8 /* DLRadioButton-prefix.pch */,
-				A5B7C0446AC527201A14900BB524E360 /* DLRadioButton-umbrella.h */,
-				EE26A81026EB7078F162E19B0BF0A65D /* Info.plist */,
+				DD3FEB0DFA96D259FA3BE49A0EFB6FE7 /* BTNavigationDropdownMenu */,
+				06E2A35F3201712A9DD30F8954A5CDC5 /* DLRadioButton */,
+				12424D4F490D184FEC1723AD9F67B0AD /* JTAppleCalendar */,
+				373AD74F16330C725DBD8C5A0AF72067 /* NAExpandableTableController */,
+				9150E87B2B129C683B620448EB9DF27E /* SCLAlertView */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/DLRadioButton";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		E35E16A6ACD72FC888D447F3FD4CC253 /* NAExpandableTableController */ = {
+		DCA92D0F07DEF5FAE600A5F5C0B762B7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				80438C923BF9F1788A0C0EAF86342692 /* NAExpandableTableController.swift */,
-				8AA213FDA46BD06BDEA889A152ADAC4D /* Support Files */,
+				54F01BD170DD5E62298E4FC0FDB4B76C /* BTNavigationDropdownMenu.bundle */,
 			);
-			path = NAExpandableTableController;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DD3FEB0DFA96D259FA3BE49A0EFB6FE7 /* BTNavigationDropdownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				8FD733BD6F5D1FB3D110F1F218F4305B /* BTNavigationDropdownMenu.swift */,
+				DCA92D0F07DEF5FAE600A5F5C0B762B7 /* Resources */,
+				93C4622BAC04F09F7A68588A994179A8 /* Support Files */,
+			);
+			path = BTNavigationDropdownMenu;
 			sourceTree = "<group>";
 		};
 		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
@@ -331,26 +419,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F91D2FD2BEA6CCA33D2A77E8041438F4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EF1830569058FB95F708B330F34A9042 /* BTNavigationDropdownMenu.framework */,
-				6670E06605068564CFDB18C48F60B076 /* DLRadioButton.framework */,
-				AB50AF2448592CCF4009B09BD8F473A2 /* NAExpandableTableController.framework */,
-				31FCFE3E6D15229CC314E8C6A1EA5705 /* Pods_TinyCloset.framework */,
-				EB0CB888C41DFBB73A53EC6FC055178C /* SCLAlertView.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		40F3807A525B12083D9CE7234206B9EA /* Headers */ = {
+		4F654CC6694BC1206F00DE566CAB7679 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF65971B0ED0568E21D82EA60F6F59C8 /* SCLAlertView-umbrella.h in Headers */,
+				5C9B0D092BE9A0F2ECFD3510EDEA9039 /* SCLAlertView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,14 +436,6 @@
 			files = (
 				C7AB837F3200D41BF676DC49D222EBAC /* DLRadioButton-umbrella.h in Headers */,
 				5F5B910D306CC0849640D0372E2ADB43 /* DLRadioButton.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		76DAED4C5456C51731B6EAB1B72CCA1D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F4EF77F4E010C575BEF1E2DE5F85A640 /* Pods-TinyCloset-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,28 +455,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E0E902C2A33E7ED5F74204FEEA384D7E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF252487F3DE22863FC5424290F8725B /* Pods-TinyCloset-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9388E434DA66EEF7517A594C3985AEF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C69CD56514D0F663493F5EBE249C51D6 /* JTAppleCalendar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		087A8E9693BABB2EA445C1B42EC0B8E7 /* Pods-TinyCloset */ = {
+		020F7102383C4C85C8DE9CA5BB6A31A6 /* Pods-TinyCloset */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7FA509E1100DE16EF9FEF93AD0AA6CA5 /* Build configuration list for PBXNativeTarget "Pods-TinyCloset" */;
+			buildConfigurationList = 48AD7EF9C1569375AAA07999CFB07D2B /* Build configuration list for PBXNativeTarget "Pods-TinyCloset" */;
 			buildPhases = (
-				23BD11027B83E39CAE4587302F1165FB /* Sources */,
-				63581295FF144CD291184DE993B2899A /* Frameworks */,
-				76DAED4C5456C51731B6EAB1B72CCA1D /* Headers */,
+				C022B199D1C65DC9EFE2108BB81DC346 /* Sources */,
+				4AA87E2247C2379E194474294FFA8D4C /* Frameworks */,
+				E0E902C2A33E7ED5F74204FEEA384D7E /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				973CD68113A6AC91C2E06B5776984DA9 /* PBXTargetDependency */,
-				8765FA4743D1D0ECCF2A4A49F86F7E61 /* PBXTargetDependency */,
-				4C59B9998519609AB92B9C3DF49BF8FB /* PBXTargetDependency */,
-				8C451A400028369F6D3E520921414490 /* PBXTargetDependency */,
+				A0260403B2E7711558AFE76A200ADECB /* PBXTargetDependency */,
+				134A35EFD3D6B02F4684831B78D71824 /* PBXTargetDependency */,
+				A053BE3680C6E2BA2F35D454F1873E62 /* PBXTargetDependency */,
+				45464E2B400D998EDA94C0010E2BB581 /* PBXTargetDependency */,
+				00998E60D1AA51E4107756AD3F69015A /* PBXTargetDependency */,
 			);
 			name = "Pods-TinyCloset";
 			productName = "Pods-TinyCloset";
-			productReference = 31FCFE3E6D15229CC314E8C6A1EA5705 /* Pods_TinyCloset.framework */;
+			productReference = 4B06598B9DBFFDC459F4025A78B296B6 /* Pods_TinyCloset.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		2E016905202646F675A3E2B28B16F5D1 /* NAExpandableTableController */ = {
@@ -425,16 +510,33 @@
 			);
 			name = NAExpandableTableController;
 			productName = NAExpandableTableController;
-			productReference = AB50AF2448592CCF4009B09BD8F473A2 /* NAExpandableTableController.framework */;
+			productReference = 81DBEC31731925A8A60138E0F2D06B65 /* NAExpandableTableController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E59B44A993DE08E5E973E1CF63188637 /* SCLAlertView */ = {
+		2E2ED75B03CF4A2D0719664A48C0B27E /* JTAppleCalendar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 370AC7A2466AB136BE4204C135E0BB2E /* Build configuration list for PBXNativeTarget "SCLAlertView" */;
+			buildConfigurationList = 779E37D9C699030E3EEE21BB23F81A82 /* Build configuration list for PBXNativeTarget "JTAppleCalendar" */;
 			buildPhases = (
-				D72BBC1A04D14490FCD7163367C24F16 /* Sources */,
-				8A14689CF0F085186CAD2E16100750CF /* Frameworks */,
-				40F3807A525B12083D9CE7234206B9EA /* Headers */,
+				9C72E46DD5A9172504341DE21C5780F1 /* Sources */,
+				36C1DCD9D20BA178F26F5E04EB6499E2 /* Frameworks */,
+				F9388E434DA66EEF7517A594C3985AEF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JTAppleCalendar;
+			productName = JTAppleCalendar;
+			productReference = A14650DD77E6107340EDD175F5C9EFEA /* JTAppleCalendar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D632EE73AAC841B1F662586DC51B3B67 /* SCLAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EE006443801020623C2426F81B3F03F /* Build configuration list for PBXNativeTarget "SCLAlertView" */;
+			buildPhases = (
+				6B1A013246902C1E47C02E9713C2E0CB /* Sources */,
+				C9EF6F970D68725D72AAE55171AFAD4A /* Frameworks */,
+				4F654CC6694BC1206F00DE566CAB7679 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -442,7 +544,7 @@
 			);
 			name = SCLAlertView;
 			productName = SCLAlertView;
-			productReference = EB0CB888C41DFBB73A53EC6FC055178C /* SCLAlertView.framework */;
+			productReference = D7CED626E00E2D13FDBFAD8F5EEF4EF4 /* SCLAlertView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F3990E3EAC160D4E4F89177D966FC1E9 /* DLRadioButton */ = {
@@ -459,7 +561,7 @@
 			);
 			name = DLRadioButton;
 			productName = DLRadioButton;
-			productReference = 6670E06605068564CFDB18C48F60B076 /* DLRadioButton.framework */;
+			productReference = A7B0A26D736CC4787F19AE1C21ADA53F /* DLRadioButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FD23F1DA220A44C7E84F356B64871271 /* BTNavigationDropdownMenu */ = {
@@ -477,7 +579,7 @@
 			);
 			name = BTNavigationDropdownMenu;
 			productName = BTNavigationDropdownMenu;
-			productReference = EF1830569058FB95F708B330F34A9042 /* BTNavigationDropdownMenu.framework */;
+			productReference = 56168431F32CFA8271A9E672491FA0F2 /* BTNavigationDropdownMenu.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -497,15 +599,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F91D2FD2BEA6CCA33D2A77E8041438F4 /* Products */;
+			productRefGroup = 468A2F04F7C7E62F4328D901C699FCD7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				FD23F1DA220A44C7E84F356B64871271 /* BTNavigationDropdownMenu */,
 				F3990E3EAC160D4E4F89177D966FC1E9 /* DLRadioButton */,
+				2E2ED75B03CF4A2D0719664A48C0B27E /* JTAppleCalendar */,
 				2E016905202646F675A3E2B28B16F5D1 /* NAExpandableTableController */,
-				087A8E9693BABB2EA445C1B42EC0B8E7 /* Pods-TinyCloset */,
-				E59B44A993DE08E5E973E1CF63188637 /* SCLAlertView */,
+				020F7102383C4C85C8DE9CA5BB6A31A6 /* Pods-TinyCloset */,
+				D632EE73AAC841B1F662586DC51B3B67 /* SCLAlertView */,
 			);
 		};
 /* End PBXProject section */
@@ -531,14 +634,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23BD11027B83E39CAE4587302F1165FB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				106DCB1A215C05E2FD641039160D4686 /* Pods-TinyCloset-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		255A4F3B097CD7D88E8A81A11E927FCD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -557,84 +652,110 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D72BBC1A04D14490FCD7163367C24F16 /* Sources */ = {
+		6B1A013246902C1E47C02E9713C2E0CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C331FA9DBC6029F02F5FB5339E73613A /* Info.plist in Sources */,
-				4770D6DE8B54F63F284EE2234B940051 /* SCLAlertView-dummy.m in Sources */,
-				B203141CD010BFA7B790815FA892E67A /* SCLAlertView.swift in Sources */,
-				A30955059BC2718975F6F6D256AF4F7E /* SCLExtensions.swift in Sources */,
+				6FAAFEBF84826271B3A48832D105682C /* Info.plist in Sources */,
+				416219B4CCFF53FBF6D68701A45ACFA5 /* SCLAlertView-dummy.m in Sources */,
+				6B926B4C3D287B3A4C8D51BF8B933027 /* SCLAlertView.swift in Sources */,
+				6FA0B47BF227B7FD2067660342BE03AB /* SCLExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C72E46DD5A9172504341DE21C5780F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3452DD3754D95120E94DF394DC1B5883 /* GlobalFunctionsAndExtensions.swift in Sources */,
+				46381088FA19FD2DAB63ECC1AB6BAAB2 /* JTAppleCalendar-dummy.m in Sources */,
+				6CC4EFECEE1FD3FE6D6838471385F16B /* JTAppleCalendarDelegates.swift in Sources */,
+				5891E177A8181815660DBEFC5B7410F4 /* JTAppleCalendarLayout.swift in Sources */,
+				17CD2E009DE8E3B5E67931B817DB066E /* JTAppleCalendarView.swift in Sources */,
+				B462F0A7C7A9A2525CECDA48C0BE7E79 /* JTAppleCollectionReusableView.swift in Sources */,
+				5B6864C610616C13B3D649F2B5F10E58 /* JTAppleDayCell.swift in Sources */,
+				8B3E6FA5D50DE3AB3E4ADABB049E7251 /* JTAppleViews.swift in Sources */,
+				E07ADE6AAD2B4E12D7D48A78747CA3C9 /* JTCalendarProtocols.swift in Sources */,
+				D1A38551381CF69929278EC135697F70 /* UserInteractionFunctions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C022B199D1C65DC9EFE2108BB81DC346 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CEC69F259625F9B7B2501DB3E754B38 /* Pods-TinyCloset-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4C59B9998519609AB92B9C3DF49BF8FB /* PBXTargetDependency */ = {
+		00998E60D1AA51E4107756AD3F69015A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = NAExpandableTableController;
-			target = 2E016905202646F675A3E2B28B16F5D1 /* NAExpandableTableController */;
-			targetProxy = 07809499B6C864CE899ABA08398B512C /* PBXContainerItemProxy */;
+			name = SCLAlertView;
+			target = D632EE73AAC841B1F662586DC51B3B67 /* SCLAlertView */;
+			targetProxy = 1FB71FC680F4A102B8A9FE31CBFD5572 /* PBXContainerItemProxy */;
 		};
-		8765FA4743D1D0ECCF2A4A49F86F7E61 /* PBXTargetDependency */ = {
+		134A35EFD3D6B02F4684831B78D71824 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DLRadioButton;
 			target = F3990E3EAC160D4E4F89177D966FC1E9 /* DLRadioButton */;
-			targetProxy = 36CE4019D116BC06AC83D65D93B34843 /* PBXContainerItemProxy */;
+			targetProxy = 2A5E68B3CFBB001A99257599BF225652 /* PBXContainerItemProxy */;
 		};
-		8C451A400028369F6D3E520921414490 /* PBXTargetDependency */ = {
+		45464E2B400D998EDA94C0010E2BB581 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SCLAlertView;
-			target = E59B44A993DE08E5E973E1CF63188637 /* SCLAlertView */;
-			targetProxy = 06D64C1A8CC027D71AE9D774FE2ED5BA /* PBXContainerItemProxy */;
+			name = NAExpandableTableController;
+			target = 2E016905202646F675A3E2B28B16F5D1 /* NAExpandableTableController */;
+			targetProxy = 0923E6B724B589D739792DE56E7D3A68 /* PBXContainerItemProxy */;
 		};
-		973CD68113A6AC91C2E06B5776984DA9 /* PBXTargetDependency */ = {
+		A0260403B2E7711558AFE76A200ADECB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BTNavigationDropdownMenu;
 			target = FD23F1DA220A44C7E84F356B64871271 /* BTNavigationDropdownMenu */;
-			targetProxy = B48C1EDBE05D3F9D657067724445B189 /* PBXContainerItemProxy */;
+			targetProxy = 4A4B88C893813C4C8387331AEE7534A4 /* PBXContainerItemProxy */;
+		};
+		A053BE3680C6E2BA2F35D454F1873E62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JTAppleCalendar;
+			target = 2E2ED75B03CF4A2D0719664A48C0B27E /* JTAppleCalendar */;
+			targetProxy = AA40A71E0C49CA055D8195BED379B77C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		20E30537CC27377726AA4DB0B406AD8A /* Debug */ = {
+		0C564F42F82F7A7DCEFC63DB74C3926B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C41A6F878F0715C2BBE1815ABF07CE2 /* Pods-TinyCloset.debug.xcconfig */;
+			baseConfigurationReference = A91634DE16BD97BD752305C9B7907D08 /* SCLAlertView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TinyCloset/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TinyCloset/Pods-TinyCloset.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TinyCloset;
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SCLAlertView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		31F8ABE817A21C1EF374E81A4E8EFDA7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 856653D787BFFE75722B395D7FD1AD48 /* DLRadioButton.xcconfig */;
+			baseConfigurationReference = A34266DA75055A8E379B26D1ACA33ADD /* DLRadioButton.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -701,7 +822,7 @@
 		};
 		42A9B381F965A544FA203469CF3316B0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DEC8AD2C8E965B635AE1691F15CD302C /* NAExpandableTableController.xcconfig */;
+			baseConfigurationReference = BA4BE8E3B05409762C815512ED3E774E /* NAExpandableTableController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -720,6 +841,35 @@
 				MODULEMAP_FILE = "Target Support Files/NAExpandableTableController/NAExpandableTableController.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = NAExpandableTableController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5CC4396F26D3B1E9ABD29ADF262558F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D6714C1F25DEE809E66298FCE5BDA3F /* JTAppleCalendar.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JTAppleCalendar/JTAppleCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JTAppleCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JTAppleCalendar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -772,7 +922,7 @@
 		};
 		7A6EFE1350C06106537C8DECCACB99B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DEC8AD2C8E965B635AE1691F15CD302C /* NAExpandableTableController.xcconfig */;
+			baseConfigurationReference = BA4BE8E3B05409762C815512ED3E774E /* NAExpandableTableController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -802,7 +952,7 @@
 		};
 		8AA444D9B3DE9C29543A27CA8BEE10B6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C07478E05B6DCCEC1207EE342B0DBC07 /* BTNavigationDropdownMenu.xcconfig */;
+			baseConfigurationReference = D9EC1E6F32D50CF29726E2D6EEFCA1BF /* BTNavigationDropdownMenu.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -829,9 +979,39 @@
 			};
 			name = Release;
 		};
+		8B8D1AF11312C93DFFC29F5254D2984B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A91634DE16BD97BD752305C9B7907D08 /* SCLAlertView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		989F7944327ADBDE4C39777729675AE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C07478E05B6DCCEC1207EE342B0DBC07 /* BTNavigationDropdownMenu.xcconfig */;
+			baseConfigurationReference = D9EC1E6F32D50CF29726E2D6EEFCA1BF /* BTNavigationDropdownMenu.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -859,36 +1039,7 @@
 			};
 			name = Debug;
 		};
-		B91A46568521B4B69EA0ADCEFB96FB8C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 856653D787BFFE75722B395D7FD1AD48 /* DLRadioButton.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DLRadioButton/DLRadioButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DLRadioButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DLRadioButton/DLRadioButton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = DLRadioButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C2C577EE078C212CE7538859173178EA /* Release */ = {
+		9B9C7B46C094DF3A7C516F6AFA0A42BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0A5339331848C2D54B1F68536FEBA19F /* Pods-TinyCloset.release.xcconfig */;
 			buildSettings = {
@@ -921,38 +1072,9 @@
 			};
 			name = Release;
 		};
-		DCB53E7E7A48615A7F6142A1CD82761E /* Release */ = {
+		B3A56EF1D4F0124A1036EC445016FF83 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74FEA51F3D4CC7A51977AF9B946D5966 /* SCLAlertView.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SCLAlertView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E6273C17F3ACC02642827477A069D9B6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74FEA51F3D4CC7A51977AF9B946D5966 /* SCLAlertView.xcconfig */;
+			baseConfigurationReference = 3C41A6F878F0715C2BBE1815ABF07CE2 /* Pods-TinyCloset.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -963,14 +1085,77 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SCLAlertView/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-TinyCloset/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TinyCloset/Pods-TinyCloset.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TinyCloset;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B91A46568521B4B69EA0ADCEFB96FB8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A34266DA75055A8E379B26D1ACA33ADD /* DLRadioButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DLRadioButton/DLRadioButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DLRadioButton/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				MODULEMAP_FILE = "Target Support Files/DLRadioButton/DLRadioButton.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SCLAlertView;
+				PRODUCT_NAME = DLRadioButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DE6615359623E265197EA53538265183 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D6714C1F25DEE809E66298FCE5BDA3F /* JTAppleCalendar.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JTAppleCalendar/JTAppleCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JTAppleCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JTAppleCalendar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -992,20 +1177,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		370AC7A2466AB136BE4204C135E0BB2E /* Build configuration list for PBXNativeTarget "SCLAlertView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E6273C17F3ACC02642827477A069D9B6 /* Debug */,
-				DCB53E7E7A48615A7F6142A1CD82761E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4494C3D89098D38D8FE1F848260AAF7C /* Build configuration list for PBXNativeTarget "NAExpandableTableController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7A6EFE1350C06106537C8DECCACB99B2 /* Debug */,
 				42A9B381F965A544FA203469CF3316B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48AD7EF9C1569375AAA07999CFB07D2B /* Build configuration list for PBXNativeTarget "Pods-TinyCloset" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3A56EF1D4F0124A1036EC445016FF83 /* Debug */,
+				9B9C7B46C094DF3A7C516F6AFA0A42BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1019,11 +1204,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7FA509E1100DE16EF9FEF93AD0AA6CA5 /* Build configuration list for PBXNativeTarget "Pods-TinyCloset" */ = {
+		6EE006443801020623C2426F81B3F03F /* Build configuration list for PBXNativeTarget "SCLAlertView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				20E30537CC27377726AA4DB0B406AD8A /* Debug */,
-				C2C577EE078C212CE7538859173178EA /* Release */,
+				8B8D1AF11312C93DFFC29F5254D2984B /* Debug */,
+				0C564F42F82F7A7DCEFC63DB74C3926B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		779E37D9C699030E3EEE21BB23F81A82 /* Build configuration list for PBXNativeTarget "JTAppleCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE6615359623E265197EA53538265183 /* Debug */,
+				5CC4396F26D3B1E9ABD29ADF262558F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

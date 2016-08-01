@@ -31,7 +31,7 @@ class Outfit: NSManagedObject {
     
     func getPeopleAsString() -> String {
         
-        var str = ""
+        var str = "None"
         if let arr = self.persons?.allObjects as? [Person] where arr.count > 0 {
             print(arr.count)
             if let first = arr[0].name {
@@ -49,8 +49,25 @@ class Outfit: NSManagedObject {
     }
     
     func getEventsAsString() -> String {
-        var str = ""
+        var str = "None"
         if let arr = self.events?.allObjects as? [Event] where arr.count > 0 {
+            print(arr.count)
+            if let first = arr[0].name {
+                str = "\(first)"
+            }
+            for x in 1..<arr.count {
+                if let name = arr[x].name {
+                    str = "\(str), \(name)"
+                }
+            }
+        }
+        
+        return str
+    }
+    
+    func getTypesAsString() -> String {
+        var str = "None"
+        if let arr = self.types?.allObjects as? [Type] where arr.count > 0 {
             print(arr.count)
             if let first = arr[0].name {
                 str = "\(first)"
@@ -68,11 +85,7 @@ class Outfit: NSManagedObject {
     func setClothingType(types: [Type]) {
         self.types = NSSet(array: types)
     }
-    
-//    func setFavorite(bool: Bool) {
-//        favorite = bool
-//    }
-//    
+       
     func changeFavorite() {
         if self.favorite == true {
             favorite = false
@@ -82,13 +95,13 @@ class Outfit: NSManagedObject {
     }
     
     func wearToday() {
-        dateFormatter.dateFormat = "EEEE, MMMM dd"
-        
         let date = NSDate()
-        let convertedDate = dateFormatter.stringFromDate(date)
+        wornDates.addObject(date)
         
-        wornDates.addObject(convertedDate)
-        lastWorn = wornDates[wornDates.count - 1] as? String
+        dateFormatter.dateFormat = "EEEE, MMM dd"
+        let convertedDate = dateFormatter.stringFromDate(date)
+        lastWorn = convertedDate
+        
     }
     
 }

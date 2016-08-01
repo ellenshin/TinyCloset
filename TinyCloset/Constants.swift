@@ -44,7 +44,7 @@ extension UIImage {
         
         UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
         self.drawInRect(CGRectMake(0, 0, self.size.width, self.size.height))
-        var normalizedImage:UIImage = UIGraphicsGetImageFromCurrentImageContext();
+        let normalizedImage:UIImage = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         
         return normalizedImage;

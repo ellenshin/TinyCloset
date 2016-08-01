@@ -17,13 +17,13 @@ class wearingTodayVC: UIViewController, NAExpandableTableViewDataSource, NAExpan
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var outfitImg: UIImageView!
     
-    let numberOfSections = 3
+    var numberOfSections: Int!
     let expandableSectionIndices = [0, 1, 2]
-    let sectionTitles = ["Event", "People", "Type of clothing"]
+    var sectionTitles: [String]!
     var eventArray = [Event]()
     var peopleArray = [Person]()
     var typeArray = [Type]()
-    
+    var wearingItToday = false
     var selectedSeason: Seasons = .AllYear
     var favorite = false
     var newOutfit: Outfit?
@@ -33,7 +33,16 @@ class wearingTodayVC: UIViewController, NAExpandableTableViewDataSource, NAExpan
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if wearingItToday {
+            numberOfSections = 3
+        } else {
+            numberOfSections = 2
+        }
+        if wearingItToday {
+            sectionTitles = ["Event", "People", "Type of clothing"]
+        } else {
+            sectionTitles = ["Event", "Type of clothing"]
+        }
         // First create our NAExpandableTableController instance
         self.expandableTableController = NAExpandableTableController(dataSource: self, delegate: self)
         self.expandableTableController.exclusiveExpand = false
@@ -45,10 +54,11 @@ class wearingTodayVC: UIViewController, NAExpandableTableViewDataSource, NAExpan
         tableView.tableFooterView = UIView(frame: CGRectZero)
         preExpand(0)
         preExpand(1)
-        preExpand(2)
+        if wearingItToday {
+            preExpand(2)
+        }
         tableView.reloadData()
         outfitImg.image = DataService.instance.newOutfitImage
-        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(wearingTodayVC.onContentAdded), name: "contentAdded", object: nil)
 
     }
@@ -56,24 +66,43 @@ class wearingTodayVC: UIViewController, NAExpandableTableViewDataSource, NAExpan
     // MARK: - NAExpandableTableViewDataSource
     
     func onContentAdded(notification: NSNotification) {
-        if let content = notification.object as? Event {
-            eventArray.append(content)
-            if expandableTableController.expandDict[0] == false {
-                preExpand(0)
-            }
-
-        } else if let content = notification.object as? Person {
-            peopleArray.append(content)
-            if expandableTableController.expandDict[1] == false {
-                preExpand(1)
-            }
-        } else {
-            if let content = notification.object as? Type {
-                typeArray.append(content)
-                if expandableTableController.expandDict[2] == false {
-                    preExpand(2)
+        if wearingItToday {
+            if let content = notification.object as? Event {
+                eventArray.append(content)
+                if expandableTableController.expandDict[0] == false {
+                    preExpand(0)
+                }
+                
+            } else if let content = notification.object as? Person {
+                peopleArray.append(content)
+                if expandableTableController.expandDict[1] == false {
+                    preExpand(1)
+                }
+            } else {
+                if let content = notification.object as? Type {
+                    typeArray.append(content)
+                    if expandableTableController.expandDict[2] == false {
+                        preExpand(2)
+                    }
                 }
             }
+
+        } else {
+            if let content = notification.object as? Event {
+                eventArray.append(content)
+                if expandableTableController.expandDict[0] == false {
+                    preExpand(0)
+                }
+                
+            } else {
+                if let content = notification.object as? Type {
+                    typeArray.append(content)
+                    if expandableTableController.expandDict[1] == false {
+                        preExpand(1)
+                    }
+                }
+            }
+
         }
         tableView.reloadData()
     }
@@ -107,27 +136,47 @@ class wearingTodayVC: UIViewController, NAExpandableTableViewDataSource, NAExpan
     
     
     func expandableTableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
-            return eventArray.count
-        } else if section == 1 {
-            return peopleArray.count
+        if wearingItToday {
+            if section == 0 {
+                return eventArray.count
+            } else if section == 1 {
+                return peopleArray.count
+            } else {
+                return typeArray.count
+            }
         } else {
-            return typeArray.count
+            if section == 0 {
+                return eventArray.count
+            } else {
+                return typeArray.count
+            }
         }
+        
     }
     
     func expandableTableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCellWithIdentifier("SectionCell", forIndexPath: indexPath) as? SectionCell {
-            let section = indexPath.section
-            if section == 0 {
-                cell.configureCell(eventArray[indexPath.row].name!)
-                return cell
-            } else if section == 1 {
-                cell.configureCell(peopleArray[indexPath.row].name!)
-                return cell
+            if wearingItToday {
+                let section = indexPath.section
+                if section == 0 {
+                    cell.configureCell(eventArray[indexPath.row].name!)
+                    return cell
+                } else if section == 1 {
+                    cell.configureCell(peopleArray[indexPath.row].name!)
+                    return cell
+                } else {
+                    cell.configureCell(typeArray[indexPath.row].name!)
+                    return cell
+                }
             } else {
-                cell.configureCell(typeArray[indexPath.row].name!)
-                return cell
+                let section = indexPath.section
+                if section == 0 {
+                    cell.configureCell(eventArray[indexPath.row].name!)
+                    return cell
+                } else {
+                    cell.configureCell(typeArray[indexPath.row].name!)
+                    return cell
+                }
             }
         } else {
             return SectionTitleCell()
@@ -167,8 +216,10 @@ class wearingTodayVC: UIViewController, NAExpandableTableViewDataSource, NAExpan
             outfit.addObject(event, forKey: "events")
         }
         
-        for person in peopleArray {
-            outfit.addObject(person, forKey: "persons")
+        if wearingItToday {
+            for person in peopleArray {
+                outfit.addObject(person, forKey: "persons")
+            }
         }
         
         for type in typeArray {
@@ -177,7 +228,9 @@ class wearingTodayVC: UIViewController, NAExpandableTableViewDataSource, NAExpan
         outfit.setOutfitImage(outfitImg.image!.correctlyOrientedImage())
         outfit.setSeasonType(selectedSeason)
         outfit.favorite = self.favorite
-        outfit.wearToday()
+        if wearingItToday {
+            outfit.wearToday()
+        }
         
     }
     
@@ -233,13 +286,22 @@ class wearingTodayVC: UIViewController, NAExpandableTableViewDataSource, NAExpan
     // MARK: - NAExpandableTableViewDelegate
     
     func expandableTableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
     }
     
     func expandableTableView(tableView: UITableView, didSelectTitleCellInSection section: Int) {
-        
+//        if let titleCell = tableView.cellForRowAtIndexPath(NSIndexPath(forRow: 0, inSection: section)) as? SectionTitleCell {
+//            titleCell.rotateArrow()
+//        }
     }
     
     func expandableTableView(tableView: UITableView, didExpandSection section: Int, expanded: Bool) {
     }
+    
+    
+    
+    
+    
+    
+    
+    
 }
