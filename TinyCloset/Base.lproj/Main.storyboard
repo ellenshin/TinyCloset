@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ewB-If-oN8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ewB-If-oN8">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -559,7 +559,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Nhl-tM-sb6">
                                 <rect key="frame" x="170" y="213" width="189" height="31"/>
                                 <subviews>
-                                    <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEm-Eb-VGw" customClass="DLRadioButton">
+                                    <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEm-Eb-VGw" customClass="DLRadioButton">
                                         <rect key="frame" x="0.0" y="0.0" width="52" height="31"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                         <state key="normal" title="Yes!">
@@ -579,7 +579,7 @@
                                             <outletCollection property="otherButtons" destination="Dgl-8o-aYF" id="zGi-uz-sr3"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgl-8o-aYF" customClass="DLRadioButton">
+                                    <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgl-8o-aYF" customClass="DLRadioButton">
                                         <rect key="frame" x="52" y="0.0" width="137" height="31"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                         <state key="normal" title="Not really...">
@@ -601,13 +601,13 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="vqm-he-iSq">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="vqm-he-iSq">
                                 <rect key="frame" x="170" y="78" width="189" height="113"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qAE-w2-PP2">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qAE-w2-PP2">
                                         <rect key="frame" x="0.0" y="0.0" width="88" height="113"/>
                                         <subviews>
-                                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXy-Ac-n4M" customClass="DLRadioButton">
+                                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXy-Ac-n4M" customClass="DLRadioButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="88" height="31"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                 <state key="normal" title="Spring">
@@ -630,7 +630,7 @@
                                                     <outletCollection property="otherButtons" destination="pOy-gF-NKW" id="Hiq-6a-tdr"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kv7-Z9-8Yu" customClass="DLRadioButton">
+                                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kv7-Z9-8Yu" customClass="DLRadioButton">
                                                 <rect key="frame" x="0.0" y="41" width="88" height="31"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                 <state key="normal" title="Fall">
@@ -653,7 +653,7 @@
                                                     <outletCollection property="otherButtons" destination="zkz-LU-Oxa" id="nUX-hb-wYo"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cx9-e9-dwt" customClass="DLRadioButton">
+                                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cx9-e9-dwt" customClass="DLRadioButton">
                                                 <rect key="frame" x="0.0" y="82" width="88" height="31"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                 <state key="normal" title="All year">
@@ -678,10 +678,10 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bAa-5B-AsH">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bAa-5B-AsH">
                                         <rect key="frame" x="88" y="0.0" width="101" height="72"/>
                                         <subviews>
-                                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOy-gF-NKW" customClass="DLRadioButton">
+                                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOy-gF-NKW" customClass="DLRadioButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="101" height="31"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                 <state key="normal" title="Summer">
@@ -704,7 +704,7 @@
                                                     <outletCollection property="otherButtons" destination="Cx9-e9-dwt" id="jNB-ik-2vh"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkz-LU-Oxa" customClass="DLRadioButton">
+                                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkz-LU-Oxa" customClass="DLRadioButton">
                                                 <rect key="frame" x="0.0" y="41" width="101" height="31"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                 <state key="normal" title="Winter">
@@ -1515,7 +1515,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1334.5" y="-2180.5"/>
+            <point key="canvasLocation" x="-1338.5" y="-2180.5"/>
         </scene>
         <!--Calendar-->
         <scene sceneID="wg7-f3-ORb">

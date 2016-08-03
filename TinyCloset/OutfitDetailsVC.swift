@@ -23,7 +23,14 @@ class OutfitDetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dateLbl.text = outfit.lastWorn
+        if let date = outfit.lastWorn {
+            dateFormatter.dateFormat = "EEEE, MMM dd"
+            let convertedDate = dateFormatter.stringFromDate(date)
+            dateLbl.text = convertedDate
+        } else {
+            dateLbl.text = "Never worn"
+        }
+        
         if outfit.lastWorn != "Never" {
             daysAgoLbl.text = "\(getDaysAgo()) days ago"
         } else {
@@ -41,7 +48,7 @@ class OutfitDetailsVC: UIViewController {
         let todayDate = NSDate()
         let calendar: NSCalendar = NSCalendar.currentCalendar()
         
-        let date1 = calendar.startOfDayForDate(outfit.wornDates[outfit.wornDates.count - 1] as! NSDate)
+        let date1 = calendar.startOfDayForDate(outfit.lastWorn!)
         let date2 = calendar.startOfDayForDate(todayDate)
         
         let flags = NSCalendarUnit.Day

@@ -12,12 +12,10 @@ import UIKit
 
 class Outfit: NSManagedObject {
     
-    var wornDates = NSMutableArray()
-    var peopleArray = [Person]()
-
+    var wornDates: [(date: NSDate, people: NSSet)] =  []
+    
     override func awakeFromInsert() {
         super.awakeFromInsert()
-        self.lastWorn = "Never"
     }
     
     func setSeasonType(s: Seasons) {
@@ -85,7 +83,7 @@ class Outfit: NSManagedObject {
     func setClothingType(types: [Type]) {
         self.types = NSSet(array: types)
     }
-       
+    
     func changeFavorite() {
         if self.favorite == true {
             favorite = false
@@ -96,12 +94,14 @@ class Outfit: NSManagedObject {
     
     func wearToday() {
         let date = NSDate()
-        wornDates.addObject(date)
+        let dateSet = (date, self.persons!)
+        wornDates.append(dateSet)
         
-        dateFormatter.dateFormat = "EEEE, MMM dd"
-        let convertedDate = dateFormatter.stringFromDate(date)
-        lastWorn = convertedDate
+        //        dateFormatter.dateFormat = "EEEE, MMM dd"
+        //        let convertedDate = dateFormatter.stringFromDate(date)
+        //        lastWorn = convertedDate
         
+        lastWorn = date
     }
     
 }

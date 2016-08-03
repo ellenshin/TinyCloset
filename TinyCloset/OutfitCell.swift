@@ -33,7 +33,11 @@ class OutfitCell: UICollectionViewCell {
         }
         
         if let date = outfit.lastWorn {
-            dateLbl.text = date
+            dateFormatter.dateFormat = "EEEE, MMM dd"
+            let convertedDate = dateFormatter.stringFromDate(date)
+            dateLbl.text = convertedDate
+        } else {
+            dateLbl.text = "Never worn"
         }
         
         let occ = outfit.getEventsAsString()

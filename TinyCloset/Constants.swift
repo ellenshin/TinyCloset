@@ -12,6 +12,7 @@ import UIKit
 
 var dateFormatter = NSDateFormatter()
 
+
 enum Seasons: String {
     
     case Spring = "Spring"
