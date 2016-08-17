@@ -28,9 +28,13 @@ class ClosetVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
         attemptFetch()
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ClosetVC.attemptFetch), name: "newOutfitAdded", object: nil)
-        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ClosetVC.deleteOutfit), name: "outfitDeleted", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ClosetVC.editOutfit), name: "outfitEdited", object: nil)
     }
     
+    func editOutfit(notif: NSNotification) {
+        collectionView.reloadData()
+    }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if let sections = fetchedResultsController.sections {
@@ -87,6 +91,21 @@ class ClosetVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
 //        }
 //    }
     
+    func deleteOutfit(notif: NSNotification) {
+        let context = ad.managedObjectContext
+        
+        if let outfit = notif.object as? Outfit {
+            context.deleteObject(outfit)
+            do {
+                try context.save()
+            } catch {
+                print("there is an error")
+            }
+        }
+        
+    
+    }
+
     func controller(controller: NSFetchedResultsController, didChangeObject anObject: AnyObject, atIndexPath indexPath: NSIndexPath?, forChangeType type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath?) {
         
         switch(type) {
@@ -156,7 +175,10 @@ class ClosetVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
         fetchedResultsController = controller
     }
 
-    
+    func getById(id: NSManagedObjectID) -> Outfit? {
+        let context = ad.managedObjectContext
+        return context.objectWithID(id) as? Outfit
+    }
     
     
     

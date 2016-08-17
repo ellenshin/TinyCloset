@@ -1,5 +1,5 @@
 //
-//  Event+CoreDataProperties.swift
+//  Person+CoreDataProperties.swift
 //  TinyCloset
 //
 //  Created by Ellen Shin on 8/16/16.
@@ -12,9 +12,12 @@
 import Foundation
 import CoreData
 
-extension Event {
+extension Person {
 
     @NSManaged var name: String?
-    @NSManaged var outfit: NSSet?
+    @NSManaged var lent: NSSet?
+    @NSManaged var outfits: NSSet?
+    @NSManaged var suitcase: Suitcase?
+    @NSManaged var pairs: NSSet?
 
 }

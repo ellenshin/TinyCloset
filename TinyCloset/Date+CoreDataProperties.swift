@@ -1,5 +1,5 @@
 //
-//  Event+CoreDataProperties.swift
+//  Date+CoreDataProperties.swift
 //  TinyCloset
 //
 //  Created by Ellen Shin on 8/16/16.
@@ -12,9 +12,11 @@
 import Foundation
 import CoreData
 
-extension Event {
+extension Date {
 
+    @NSManaged var date: NSDate?
     @NSManaged var name: String?
-    @NSManaged var outfit: NSSet?
+    @NSManaged var pastOrFuture: NSNumber?
+    @NSManaged var pairs: NSSet?
 
 }

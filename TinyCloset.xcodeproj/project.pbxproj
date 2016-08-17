@@ -17,9 +17,19 @@
 		33089C2F1D3832CA00BC52DE /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33089C251D3832CA00BC52DE /* Type.swift */; };
 		33089C301D3832CA00BC52DE /* Suitcase+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33089C261D3832CA00BC52DE /* Suitcase+CoreDataProperties.swift */; };
 		33089C311D3832CA00BC52DE /* Suitcase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33089C271D3832CA00BC52DE /* Suitcase.swift */; };
-		33089C321D3832CA00BC52DE /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33089C281D3832CA00BC52DE /* Person+CoreDataProperties.swift */; };
-		33089C331D3832CA00BC52DE /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33089C291D3832CA00BC52DE /* Person.swift */; };
 		33089C351D383A4900BC52DE /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33089C341D383A4900BC52DE /* CustomView.swift */; };
+		3315A2A61D6164770050A08C /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3315A2A51D6164770050A08C /* CalendarVC.swift */; };
+		3315A2A81D626BAF0050A08C /* ViewMoreOutfitsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3315A2A71D626BAF0050A08C /* ViewMoreOutfitsVC.swift */; };
+		3315A2B31D63D2320050A08C /* Date+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3315A2B11D63D2320050A08C /* Date+CoreDataProperties.swift */; };
+		3315A2B41D63D2320050A08C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3315A2B21D63D2320050A08C /* Date.swift */; };
+		3315A2BB1D63D2C00050A08C /* Outfit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3315A2B91D63D2C00050A08C /* Outfit+CoreDataProperties.swift */; };
+		3315A2BC1D63D2C00050A08C /* Outfit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3315A2BA1D63D2C00050A08C /* Outfit.swift */; };
+		3315A2C11D63D30E0050A08C /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3315A2BD1D63D30E0050A08C /* Event+CoreDataProperties.swift */; };
+		3315A2C21D63D30E0050A08C /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3315A2BE1D63D30E0050A08C /* Event.swift */; };
+		3315A2C91D63D3CA0050A08C /* Pair+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3315A2C51D63D3CA0050A08C /* Pair+CoreDataProperties.swift */; };
+		3315A2CA1D63D3CA0050A08C /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3315A2C61D63D3CA0050A08C /* Pair.swift */; };
+		3315A2CB1D63D3CA0050A08C /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3315A2C71D63D3CA0050A08C /* Person+CoreDataProperties.swift */; };
+		3315A2CC1D63D3CA0050A08C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3315A2C81D63D3CA0050A08C /* Person.swift */; };
 		331914871D4045C10064A2E5 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331914861D4045C10064A2E5 /* DataService.swift */; };
 		331914891D404BF30064A2E5 /* NewOutfitTodayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331914881D404BF30064A2E5 /* NewOutfitTodayVC.swift */; };
 		33376A3B1D4EE7AF003F77C1 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33376A3A1D4EE7AF003F77C1 /* CalendarCell.swift */; };
@@ -39,13 +49,15 @@
 		33CE20B61D468997006FF0D8 /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CE20B51D468997006FF0D8 /* SectionCell.swift */; };
 		33CE20B81D469A87006FF0D8 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CE20B71D469A87006FF0D8 /* SearchVC.swift */; };
 		33CE20BA1D46C0EF006FF0D8 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CE20B91D46C0EF006FF0D8 /* ContentCell.swift */; };
-		33CE20BD1D46D9B0006FF0D8 /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CE20BB1D46D9B0006FF0D8 /* Event+CoreDataProperties.swift */; };
-		33CE20BE1D46D9B0006FF0D8 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CE20BC1D46D9B0006FF0D8 /* Event.swift */; };
 		33F586B21D35DE0600E5065B /* ClosetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F586B11D35DE0600E5065B /* ClosetVC.swift */; };
 		33F586BC1D360FF600E5065B /* CustomDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F586BB1D360FF600E5065B /* CustomDropdownMenu.swift */; };
 		33F586BE1D36113200E5065B /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F586BD1D36113200E5065B /* CustomImageView.swift */; };
-		33FE56381D527300007F2D9B /* Outfit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FE56361D527300007F2D9B /* Outfit+CoreDataProperties.swift */; };
-		33FE56391D527300007F2D9B /* Outfit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FE56371D527300007F2D9B /* Outfit.swift */; };
+		33FE563D1D597B38007F2D9B /* WearItCalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FE563C1D597B38007F2D9B /* WearItCalendarVC.swift */; };
+		33FE563F1D5AC9E6007F2D9B /* EditListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FE563E1D5AC9E5007F2D9B /* EditListVC.swift */; };
+		33FE56411D5ACAFB007F2D9B /* OutfitListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FE56401D5ACAFB007F2D9B /* OutfitListCell.swift */; };
+		33FE56431D5ACFBC007F2D9B /* WearItPeopleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FE56421D5ACFBC007F2D9B /* WearItPeopleVC.swift */; };
+		33FE56451D5BC707007F2D9B /* PeopleSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FE56441D5BC707007F2D9B /* PeopleSectionCell.swift */; };
+		33FE56471D5D23FA007F2D9B /* EditOutfitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FE56461D5D23FA007F2D9B /* EditOutfitVC.swift */; };
 		5298A66899E4355B4F3894A3 /* Pods_TinyCloset.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A9EF002D1BD375AB39E59F /* Pods_TinyCloset.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,9 +72,19 @@
 		33089C251D3832CA00BC52DE /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Type.swift; path = ../Type.swift; sourceTree = "<group>"; };
 		33089C261D3832CA00BC52DE /* Suitcase+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Suitcase+CoreDataProperties.swift"; path = "../Suitcase+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		33089C271D3832CA00BC52DE /* Suitcase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Suitcase.swift; path = ../Suitcase.swift; sourceTree = "<group>"; };
-		33089C281D3832CA00BC52DE /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Person+CoreDataProperties.swift"; path = "../Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		33089C291D3832CA00BC52DE /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = ../Person.swift; sourceTree = "<group>"; };
 		33089C341D383A4900BC52DE /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		3315A2A51D6164770050A08C /* CalendarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
+		3315A2A71D626BAF0050A08C /* ViewMoreOutfitsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMoreOutfitsVC.swift; sourceTree = "<group>"; };
+		3315A2B11D63D2320050A08C /* Date+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3315A2B21D63D2320050A08C /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		3315A2B91D63D2C00050A08C /* Outfit+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Outfit+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3315A2BA1D63D2C00050A08C /* Outfit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Outfit.swift; sourceTree = "<group>"; };
+		3315A2BD1D63D30E0050A08C /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3315A2BE1D63D30E0050A08C /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		3315A2C51D63D3CA0050A08C /* Pair+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pair+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3315A2C61D63D3CA0050A08C /* Pair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
+		3315A2C71D63D3CA0050A08C /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3315A2C81D63D3CA0050A08C /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		331914861D4045C10064A2E5 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		331914881D404BF30064A2E5 /* NewOutfitTodayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewOutfitTodayVC.swift; sourceTree = "<group>"; };
 		33376A3A1D4EE7AF003F77C1 /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
@@ -84,13 +106,15 @@
 		33CE20B51D468997006FF0D8 /* SectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
 		33CE20B71D469A87006FF0D8 /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		33CE20B91D46C0EF006FF0D8 /* ContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
-		33CE20BB1D46D9B0006FF0D8 /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		33CE20BC1D46D9B0006FF0D8 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		33F586B11D35DE0600E5065B /* ClosetVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosetVC.swift; sourceTree = "<group>"; };
 		33F586BB1D360FF600E5065B /* CustomDropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDropdownMenu.swift; sourceTree = "<group>"; };
 		33F586BD1D36113200E5065B /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
-		33FE56361D527300007F2D9B /* Outfit+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Outfit+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		33FE56371D527300007F2D9B /* Outfit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Outfit.swift; sourceTree = "<group>"; };
+		33FE563C1D597B38007F2D9B /* WearItCalendarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WearItCalendarVC.swift; sourceTree = "<group>"; };
+		33FE563E1D5AC9E5007F2D9B /* EditListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditListVC.swift; sourceTree = "<group>"; };
+		33FE56401D5ACAFB007F2D9B /* OutfitListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutfitListCell.swift; sourceTree = "<group>"; };
+		33FE56421D5ACFBC007F2D9B /* WearItPeopleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WearItPeopleVC.swift; sourceTree = "<group>"; };
+		33FE56441D5BC707007F2D9B /* PeopleSectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleSectionCell.swift; sourceTree = "<group>"; };
+		33FE56461D5D23FA007F2D9B /* EditOutfitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditOutfitVC.swift; sourceTree = "<group>"; };
 		56C5B68B41779E2E8FE40BC0 /* Pods-TinyCloset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyCloset.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinyCloset/Pods-TinyCloset.debug.xcconfig"; sourceTree = "<group>"; };
 		73B2AC8170E39E6C9E707B26 /* Pods-TinyCloset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyCloset.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinyCloset/Pods-TinyCloset.release.xcconfig"; sourceTree = "<group>"; };
 		D6A9EF002D1BD375AB39E59F /* Pods_TinyCloset.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinyCloset.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,9 +140,11 @@
 				33089C231D3832CA00BC52DE /* Lent.swift */,
 				33089C251D3832CA00BC52DE /* Type.swift */,
 				33089C271D3832CA00BC52DE /* Suitcase.swift */,
-				33089C291D3832CA00BC52DE /* Person.swift */,
-				33FE56371D527300007F2D9B /* Outfit.swift */,
-				33CE20BC1D46D9B0006FF0D8 /* Event.swift */,
+				3315A2B21D63D2320050A08C /* Date.swift */,
+				3315A2BA1D63D2C00050A08C /* Outfit.swift */,
+				3315A2BE1D63D30E0050A08C /* Event.swift */,
+				3315A2C61D63D3CA0050A08C /* Pair.swift */,
+				3315A2C81D63D3CA0050A08C /* Person.swift */,
 				33089BB71D36E96D00BC52DE /* Generated */,
 			);
 			name = Model;
@@ -127,14 +153,35 @@
 		33089BB71D36E96D00BC52DE /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				33CE20BB1D46D9B0006FF0D8 /* Event+CoreDataProperties.swift */,
-				33FE56361D527300007F2D9B /* Outfit+CoreDataProperties.swift */,
+				3315A2C51D63D3CA0050A08C /* Pair+CoreDataProperties.swift */,
+				3315A2C71D63D3CA0050A08C /* Person+CoreDataProperties.swift */,
 				33089C221D3832CA00BC52DE /* Lent+CoreDataProperties.swift */,
 				33089C241D3832CA00BC52DE /* Type+CoreDataProperties.swift */,
 				33089C261D3832CA00BC52DE /* Suitcase+CoreDataProperties.swift */,
-				33089C281D3832CA00BC52DE /* Person+CoreDataProperties.swift */,
+				3315A2BD1D63D30E0050A08C /* Event+CoreDataProperties.swift */,
+				3315A2B11D63D2320050A08C /* Date+CoreDataProperties.swift */,
+				3315A2B91D63D2C00050A08C /* Outfit+CoreDataProperties.swift */,
 			);
 			name = Generated;
+			sourceTree = "<group>";
+		};
+		3315A2A31D6164510050A08C /* Closet */ = {
+			isa = PBXGroup;
+			children = (
+				334372821D35B30000C4393B /* LoginVC.swift */,
+				33F586B11D35DE0600E5065B /* ClosetVC.swift */,
+				33A196591D400F3500A50A2B /* NewOutfitPictureSelectVC.swift */,
+				331914881D404BF30064A2E5 /* NewOutfitTodayVC.swift */,
+				337CF7951D4154840010BA3E /* wearingTodayVC.swift */,
+				33CE20B71D469A87006FF0D8 /* SearchVC.swift */,
+				337595771D4E9FF800352D7E /* OutfitDetailsVC.swift */,
+				337595791D4ED3F000352D7E /* MoreDatesVC.swift */,
+				33FE563C1D597B38007F2D9B /* WearItCalendarVC.swift */,
+				33FE563E1D5AC9E5007F2D9B /* EditListVC.swift */,
+				33FE56421D5ACFBC007F2D9B /* WearItPeopleVC.swift */,
+				33FE56461D5D23FA007F2D9B /* EditOutfitVC.swift */,
+			);
+			name = Closet;
 			sourceTree = "<group>";
 		};
 		331914851D4045AF0064A2E5 /* Service */ = {
@@ -183,14 +230,9 @@
 		334372811D35B2E600C4393B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				334372821D35B30000C4393B /* LoginVC.swift */,
-				33F586B11D35DE0600E5065B /* ClosetVC.swift */,
-				33A196591D400F3500A50A2B /* NewOutfitPictureSelectVC.swift */,
-				331914881D404BF30064A2E5 /* NewOutfitTodayVC.swift */,
-				337CF7951D4154840010BA3E /* wearingTodayVC.swift */,
-				33CE20B71D469A87006FF0D8 /* SearchVC.swift */,
-				337595771D4E9FF800352D7E /* OutfitDetailsVC.swift */,
-				337595791D4ED3F000352D7E /* MoreDatesVC.swift */,
+				3315A2A31D6164510050A08C /* Closet */,
+				3315A2A51D6164770050A08C /* CalendarVC.swift */,
+				3315A2A71D626BAF0050A08C /* ViewMoreOutfitsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -217,6 +259,8 @@
 				33CE20B91D46C0EF006FF0D8 /* ContentCell.swift */,
 				33376A3A1D4EE7AF003F77C1 /* CalendarCell.swift */,
 				33376A3C1D4EE7D3003F77C1 /* CalendarCell.xib */,
+				33FE56401D5ACAFB007F2D9B /* OutfitListCell.swift */,
+				33FE56441D5BC707007F2D9B /* PeopleSectionCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -362,35 +406,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3315A2A81D626BAF0050A08C /* ViewMoreOutfitsVC.swift in Sources */,
 				331914891D404BF30064A2E5 /* NewOutfitTodayVC.swift in Sources */,
-				33CE20BE1D46D9B0006FF0D8 /* Event.swift in Sources */,
+				33FE56431D5ACFBC007F2D9B /* WearItPeopleVC.swift in Sources */,
 				33F586BC1D360FF600E5065B /* CustomDropdownMenu.swift in Sources */,
 				33089C2D1D3832CA00BC52DE /* Lent.swift in Sources */,
-				33089C321D3832CA00BC52DE /* Person+CoreDataProperties.swift in Sources */,
+				33FE56411D5ACAFB007F2D9B /* OutfitListCell.swift in Sources */,
 				33089C311D3832CA00BC52DE /* Suitcase.swift in Sources */,
+				33FE563F1D5AC9E6007F2D9B /* EditListVC.swift in Sources */,
 				3343726E1D35A43A00C4393B /* AppDelegate.swift in Sources */,
 				33CE20B81D469A87006FF0D8 /* SearchVC.swift in Sources */,
 				33A1965A1D400F3500A50A2B /* NewOutfitPictureSelectVC.swift in Sources */,
 				33089C351D383A4900BC52DE /* CustomView.swift in Sources */,
 				33089BEF1D36F44A00BC52DE /* Constants.swift in Sources */,
 				33A1965D1D401AE700A50A2B /* ImageExtension.swift in Sources */,
+				3315A2CB1D63D3CA0050A08C /* Person+CoreDataProperties.swift in Sources */,
+				3315A2CA1D63D3CA0050A08C /* Pair.swift in Sources */,
+				3315A2B41D63D2320050A08C /* Date.swift in Sources */,
+				33FE56471D5D23FA007F2D9B /* EditOutfitVC.swift in Sources */,
 				33089C2F1D3832CA00BC52DE /* Type.swift in Sources */,
-				33FE56391D527300007F2D9B /* Outfit.swift in Sources */,
+				3315A2C21D63D30E0050A08C /* Event.swift in Sources */,
 				33CE20B41D46807F006FF0D8 /* SectionTitleCell.swift in Sources */,
 				33089C2E1D3832CA00BC52DE /* Type+CoreDataProperties.swift in Sources */,
+				3315A2BC1D63D2C00050A08C /* Outfit.swift in Sources */,
+				3315A2C11D63D30E0050A08C /* Event+CoreDataProperties.swift in Sources */,
+				3315A2CC1D63D3CA0050A08C /* Person.swift in Sources */,
 				33CE20BA1D46C0EF006FF0D8 /* ContentCell.swift in Sources */,
+				33FE563D1D597B38007F2D9B /* WearItCalendarVC.swift in Sources */,
 				33089BB01D361AFB00BC52DE /* OutfitCell.swift in Sources */,
+				3315A2BB1D63D2C00050A08C /* Outfit+CoreDataProperties.swift in Sources */,
 				33089C301D3832CA00BC52DE /* Suitcase+CoreDataProperties.swift in Sources */,
 				335F6B491D456DE400716F97 /* SectionInfo.swift in Sources */,
 				33089BB51D362D8300BC52DE /* TinyCloset.xcdatamodeld in Sources */,
-				33FE56381D527300007F2D9B /* Outfit+CoreDataProperties.swift in Sources */,
 				331914871D4045C10064A2E5 /* DataService.swift in Sources */,
-				33CE20BD1D46D9B0006FF0D8 /* Event+CoreDataProperties.swift in Sources */,
+				33FE56451D5BC707007F2D9B /* PeopleSectionCell.swift in Sources */,
+				3315A2C91D63D3CA0050A08C /* Pair+CoreDataProperties.swift in Sources */,
 				334372831D35B30000C4393B /* LoginVC.swift in Sources */,
 				33CE20B61D468997006FF0D8 /* SectionCell.swift in Sources */,
+				3315A2A61D6164770050A08C /* CalendarVC.swift in Sources */,
 				337CF7961D4154840010BA3E /* wearingTodayVC.swift in Sources */,
 				33089BB21D36227600BC52DE /* CustomButton.swift in Sources */,
-				33089C331D3832CA00BC52DE /* Person.swift in Sources */,
+				3315A2B31D63D2320050A08C /* Date+CoreDataProperties.swift in Sources */,
 				33376A3B1D4EE7AF003F77C1 /* CalendarCell.swift in Sources */,
 				3375957A1D4ED3F000352D7E /* MoreDatesVC.swift in Sources */,
 				33F586B21D35DE0600E5065B /* ClosetVC.swift in Sources */,

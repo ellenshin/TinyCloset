@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Xcode 7.0">
+    <entity name="Date" representedClassName=".Date" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pastOrFuture" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="pairs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pair" inverseName="date" inverseEntity="Pair" syncable="YES"/>
+    </entity>
     <entity name="Event" representedClassName=".Event" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="outfit" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Outfit" inverseName="events" inverseEntity="Outfit" syncable="YES"/>
@@ -15,16 +21,24 @@
         <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="lastWorn" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="season" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="dates" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Date" syncable="YES"/>
         <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Event" inverseName="outfit" inverseEntity="Event" syncable="YES"/>
         <relationship name="lent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lent" inverseName="outfit" inverseEntity="Lent" syncable="YES"/>
+        <relationship name="pair" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pair" inverseName="outfit" inverseEntity="Pair" syncable="YES"/>
         <relationship name="persons" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Person" inverseName="outfits" inverseEntity="Person" syncable="YES"/>
         <relationship name="suitcase" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Suitcase" inverseName="outfit" inverseEntity="Suitcase" syncable="YES"/>
         <relationship name="types" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Type" inverseName="outfit" inverseEntity="Type" syncable="YES"/>
+    </entity>
+    <entity name="Pair" representedClassName=".Pair" syncable="YES">
+        <relationship name="date" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Date" inverseName="pairs" inverseEntity="Date" syncable="YES"/>
+        <relationship name="outfit" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Outfit" inverseName="pair" inverseEntity="Outfit" syncable="YES"/>
+        <relationship name="people" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Person" inverseName="pairs" inverseEntity="Person" syncable="YES"/>
     </entity>
     <entity name="Person" representedClassName=".Person" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="lent" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Lent" inverseName="person" inverseEntity="Lent" syncable="YES"/>
         <relationship name="outfits" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Outfit" inverseName="persons" inverseEntity="Outfit" syncable="YES"/>
+        <relationship name="pairs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pair" inverseName="people" inverseEntity="Pair" syncable="YES"/>
         <relationship name="suitcase" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Suitcase" inverseName="person" inverseEntity="Suitcase" syncable="YES"/>
     </entity>
     <entity name="Suitcase" representedClassName=".Suitcase" syncable="YES">
@@ -41,9 +55,11 @@
     <elements>
         <element name="Event" positionX="-9" positionY="-99" width="128" height="75"/>
         <element name="Lent" positionX="187" positionY="-186" width="128" height="103"/>
-        <element name="Outfit" positionX="-189" positionY="-250" width="128" height="180"/>
-        <element name="Person" positionX="18" positionY="-81" width="128" height="105"/>
+        <element name="Outfit" positionX="-189" positionY="-250" width="128" height="210"/>
+        <element name="Person" positionX="18" positionY="-81" width="128" height="120"/>
         <element name="Suitcase" positionX="-209" positionY="107" width="128" height="118"/>
         <element name="Type" positionX="27" positionY="-72" width="128" height="75"/>
+        <element name="Date" positionX="-9" positionY="-99" width="128" height="105"/>
+        <element name="Pair" positionX="0" positionY="-90" width="128" height="90"/>
     </elements>
 </model>

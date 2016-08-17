@@ -2,7 +2,7 @@
 //  Person.swift
 //  TinyCloset
 //
-//  Created by Ellen Shin on 7/14/16.
+//  Created by Ellen Shin on 8/16/16.
 //  Copyright © 2016 Ellen Shin. All rights reserved.
 //
 

@@ -21,6 +21,7 @@ class DataService {
     func setImage(image: UIImage) {
         newOutfitImage = image
     }
+    let date = NSDate()
     
     var alertType: String?
     

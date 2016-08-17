@@ -59,11 +59,38 @@ class wearingTodayVC: UIViewController, NAExpandableTableViewDataSource, NAExpan
         }
         tableView.reloadData()
         outfitImg.image = DataService.instance.newOutfitImage
+        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(wearingTodayVC.onContentAdded), name: "contentAdded", object: nil)
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(wearingTodayVC.deleteCell(_:)), name: "cellDeleted", object: nil)
+        
 
     }
     
-    // MARK: - NAExpandableTableViewDataSource
+//    func deleteCell(notification: NSNotification) {
+//        let btn = notification.object as! UIButton
+//        let stringArr = btn.titleLabel!.text!.characters.split{$0 == " "}.map(String.init)
+//        let section = Int(stringArr[0])!
+//        let row = Int(stringArr[1])!
+//        if wearingItToday {
+//            if section == 0 {
+//                
+//                eventArray.removeAtIndex(row)
+//            } else if section == 1 {
+//                peopleArray.removeAtIndex(row)
+//            } else {
+//                typeArray.removeAtIndex(row)
+//            }
+//        } else {
+//            if section == 0 {
+//                eventArray.removeAtIndex(row)
+//            } else {
+//                typeArray.removeAtIndex(row)
+//            }
+//            
+//        }
+//        
+//        tableView.reloadData()
+//    }
     
     func onContentAdded(notification: NSNotification) {
         if wearingItToday {
@@ -107,6 +134,94 @@ class wearingTodayVC: UIViewController, NAExpandableTableViewDataSource, NAExpan
         tableView.reloadData()
     }
     
+    @IBAction func minusBtnPressed(sender: AnyObject) {
+        let stringArr = sender.titleLabel!!.text!.characters.split{$0 == " "}.map(String.init)
+        let section = Int(stringArr[0])!
+        let row = Int(stringArr[1])!
+        print("\(section), \(row)")
+        if wearingItToday {
+            if section == 0 {
+                print("\(eventArray[row].name!)")
+                eventArray.removeAtIndex(row)
+                if expandableTableController.expandDict[0] == false {
+                    preExpand(0)
+                }
+            } else if section == 1 {
+                peopleArray.removeAtIndex(row)
+                if expandableTableController.expandDict[1] == false {
+                    preExpand(1)
+                }
+            } else {
+                typeArray.removeAtIndex(row)
+                if expandableTableController.expandDict[2] == false {
+                    preExpand(2)
+                }
+                
+            }
+        } else {
+            if section == 0 {
+                eventArray.removeAtIndex(row)
+                if expandableTableController.expandDict[0] == false {
+                    preExpand(0)
+                }
+            } else {
+                typeArray.removeAtIndex(row)
+                if expandableTableController.expandDict[1] == false {
+                    preExpand(1)
+                }
+            }
+
+        }
+        
+        tableView.reloadData()
+        
+        //let index = NSIndexPath(forRow: row, inSection: section)
+        
+//        tableView.beginUpdates()
+//        tableView.deleteRowsAtIndexPaths([index], withRowAnimation: .Fade)
+//        tableView.endUpdates()
+    }
+//    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+//        if (editingStyle == UITableViewCellEditingStyle.Delete) {
+//            if wearingItToday {
+//                if indexPath.section == 0 {
+//                    print("\(eventArray[indexPath.row].name!)")
+//                    eventArray.removeAtIndex(indexPath.row)
+//                    if expandableTableController.expandDict[0] == false {
+//                        preExpand(0)
+//                    }
+//                } else if indexPath.section == 1 {
+//                    peopleArray.removeAtIndex(indexPath.row)
+//                    if expandableTableController.expandDict[1] == false {
+//                        preExpand(1)
+//                    }
+//                } else {
+//                    typeArray.removeAtIndex(indexPath.row)
+//                    if expandableTableController.expandDict[2] == false {
+//                        preExpand(2)
+//                    }
+//                    
+//                }
+//            } else {
+//                if indexPath.section == 0 {
+//                    eventArray.removeAtIndex(indexPath.row)
+//                    if expandableTableController.expandDict[0] == false {
+//                        preExpand(0)
+//                    }
+//                } else {
+//                    typeArray.removeAtIndex(indexPath.row)
+//                    if expandableTableController.expandDict[1] == false {
+//                        preExpand(1)
+//                    }
+//                }
+//                
+//            }
+//            
+//            tableView.reloadData()
+//
+//        }
+//    }
+    
     func preExpand(section: Int) {
         expandableTableController.expandDict[section] = true
         tableView.beginUpdates()
@@ -134,10 +249,15 @@ class wearingTodayVC: UIViewController, NAExpandableTableViewDataSource, NAExpan
         return numberOfSections
     }
     
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
+    {
+        return true
+    }
     
     func expandableTableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if wearingItToday {
             if section == 0 {
+                print("\(eventArray.count)")
                 return eventArray.count
             } else if section == 1 {
                 return peopleArray.count
@@ -156,30 +276,35 @@ class wearingTodayVC: UIViewController, NAExpandableTableViewDataSource, NAExpan
     
     func expandableTableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCellWithIdentifier("SectionCell", forIndexPath: indexPath) as? SectionCell {
+            cell.prepareForReuse()
             if wearingItToday {
                 let section = indexPath.section
                 if section == 0 {
-                    cell.configureCell(eventArray[indexPath.row].name!)
+                    cell.configureCell(eventArray[indexPath.row].name!, tag: "\(section) \(indexPath.row)")
                     return cell
                 } else if section == 1 {
-                    cell.configureCell(peopleArray[indexPath.row].name!)
+                    cell.configureCell(peopleArray[indexPath.row].name!, tag: "\(section) \(indexPath.row)")
+                    
                     return cell
                 } else {
-                    cell.configureCell(typeArray[indexPath.row].name!)
+                    cell.configureCell(typeArray[indexPath.row].name!, tag: "\(section) \(indexPath.row)")
+                    
                     return cell
                 }
             } else {
                 let section = indexPath.section
                 if section == 0 {
-                    cell.configureCell(eventArray[indexPath.row].name!)
+                    cell.configureCell(eventArray[indexPath.row].name!, tag: "\(section) \(indexPath.row)")
+                    
                     return cell
                 } else {
-                    cell.configureCell(typeArray[indexPath.row].name!)
+                    cell.configureCell(typeArray[indexPath.row].name!, tag: "\(section) \(indexPath.row)")
+                    
                     return cell
                 }
             }
         } else {
-            return SectionTitleCell()
+            return SectionCell()
         }
     }
     
@@ -229,7 +354,7 @@ class wearingTodayVC: UIViewController, NAExpandableTableViewDataSource, NAExpan
         outfit.setSeasonType(selectedSeason)
         outfit.favorite = self.favorite
         if wearingItToday {
-            outfit.wearToday()
+            outfit.wearToday(peopleArray)
         }
         
     }

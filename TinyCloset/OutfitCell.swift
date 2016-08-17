@@ -57,21 +57,12 @@ class OutfitCell: UICollectionViewCell {
     }
 
     @IBAction func heartBtnPressed(sender: AnyObject) {
-        outfit.changeFavorite()
         if outfit.favorite == true {
             heartImg.image = UIImage(named: "heart-full")
         } else {
             heartImg.image = UIImage(named: "heart-empty")
         }
+        outfit.changeFavorite()
     }
-    @IBAction func wearBtnPressed(sender: AnyObject) {
-    }
-    
-    @IBAction func packBtnPressed(sender: AnyObject) {
-    }
-    
-    @IBAction func lentBtnPressed(sender: AnyObject) {
-    }
-    
     
 }

@@ -12,10 +12,13 @@ import UIKit
 
 class Outfit: NSManagedObject {
     
-    var wornDates: [(date: NSDate, people: NSSet)] =  []
+//    var wornDates: [(date: NSDate, people: [Person])] =  []
+//    
+//    var currentPeople: [Person] = []
     
     override func awakeFromInsert() {
         super.awakeFromInsert()
+//        test()
     }
     
     func setSeasonType(s: Seasons) {
@@ -26,6 +29,23 @@ class Outfit: NSManagedObject {
         let data = UIImagePNGRepresentation(image)
         self.image = data
     }
+    
+    func willWear(date: NSDate, people: [Person]) {
+        let pair = NSEntityDescription.insertNewObjectForEntityForName("Pair", inManagedObjectContext: ad.managedObjectContext) as! Pair
+        pair.configureSelf(self, people: people)
+        
+        insertPairToDate(pair, date: date)
+        
+    }
+    
+//    func test() {
+//        
+//        dateFormatter.dateFormat = "yyyy MM dd"
+//        let date = dateFormatter.dateFromString("2016 08 27")
+//        let people: [Person] = []
+//        let tup = (date: date!, people: people)
+//        wornDates.append(tup)
+//    }
     
     func getPeopleAsString() -> String {
         
@@ -92,14 +112,39 @@ class Outfit: NSManagedObject {
         }
     }
     
-    func wearToday() {
-        let date = NSDate()
-        let dateSet = (date, self.persons!)
-        wornDates.append(dateSet)
+    func insertPairToDate(pair: Pair, date: NSDate) {
+        dateFormatter.dateFormat = "yyyy MM dd"
+        let dateString = dateFormatter.stringFromDate(date)
+        let context = ad.managedObjectContext
+        let request = NSFetchRequest(entityName: "Date")
+        let predicate = NSPredicate(format: "name BEGINSWITH[cd] %@", dateString)
+        request.predicate = predicate
         
-        //        dateFormatter.dateFormat = "EEEE, MMM dd"
-        //        let convertedDate = dateFormatter.stringFromDate(date)
-        //        lastWorn = convertedDate
+        var results = [Date]()
+        
+        do {
+            results = try context.executeFetchRequest(request) as! [Date]
+            
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+        
+        if results.count > 0 {
+            results[0].addObject(pair, forKey: "pairs")
+        } else {
+            let newDate = NSEntityDescription.insertNewObjectForEntityForName("Date", inManagedObjectContext: ad.managedObjectContext) as! Date
+            newDate.configureSelf(pair, date: date)
+        }
+
+    }
+    
+    func wearToday(people: [Person]) {
+        let date = NSDate()
+        
+        let pair = NSEntityDescription.insertNewObjectForEntityForName("Pair", inManagedObjectContext: ad.managedObjectContext) as! Pair
+        pair.configureSelf(self, people: people)
+        
+        insertPairToDate(pair, date: date)
         
         lastWorn = date
     }

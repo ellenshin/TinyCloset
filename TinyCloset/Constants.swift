@@ -12,7 +12,6 @@ import UIKit
 
 var dateFormatter = NSDateFormatter()
 
-
 enum Seasons: String {
     
     case Spring = "Spring"
@@ -23,6 +22,7 @@ enum Seasons: String {
 }
 
 let color = UIColor(red: 255, green: 127, blue: 80, alpha: 1.0)
+var todayDate = ""
 
 extension NSManagedObject {
     func addObject(value: NSManagedObject, forKey key: String) {
@@ -35,6 +35,8 @@ extension NSManagedObject {
         items.removeObject(value)
     }
 }
+
+
 
 extension UIImage {
     
